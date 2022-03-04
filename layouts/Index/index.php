@@ -207,15 +207,15 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js']);
             </div>
         </div>
     </section>
-    <section class="about_us">
+    <section class="view_all_shop">
         <div>
-            <h3>{$lang.about_us_1}</h3>
-            <h2>{$lang.about_us_2}</h2>
-            <p>{$lang.about_us_3}</p>
-            <a href="">{$lang.know_more}</a>
+            <h3>{$lang.view_all_shop_1}</h3>
+            <h2>Brazilian Bikinis.</h2>
+            <p>{$lang.view_all_shop_2}</p>
+            <a href="">{$lang.view_all_shop}</a>
         </div>
         <figure>
-            <img src="{$path.images}about_us.png" alt="About us">
+            <img src="{$path.images}view_all_shop.png" alt="About us">
         </figure>
     </section>
     <section class="our_specialities">
@@ -259,18 +259,19 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js']);
                 <span><i class="fas fa-phone"></i>+52 (012) 345 67 89</span>
                 <span><i class="fas fa-envelope"></i>vantas@brazilianbikinis.com</span>
                 <span><i class="fas fa-map-marker-alt"></i>Cancún, Quintana roo.</span>
+                <a href="">{$lang.contact_us}</a>
             </div>
         </div>
     </section>
-    <section class="magazine">
+    <section class="about_us">
         <figure>
-            <img src="{$path.images}magazine.png" alt="Magazine">
+            <img src="{$path.images}about_us.png" alt="About us">
         </figure>
         <div>
-            <h3>{$lang.magazine_1}</h3>
-            <h2>{$lang.magazine_2}</h2>
-            <p>{$lang.magazine_3}</p>
-            <a href="">{$lang.read_now}</a>
+            <h3>{$lang.about_us_1}</h3>
+            <h2>Brazilian Bikinis.</h2>
+            <p>{$lang.about_us_2}</p>
+            <a href="">{$lang.know_more}</a>
         </div>
     </section>
     <!-- <footer></footer> -->
