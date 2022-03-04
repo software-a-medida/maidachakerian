@@ -17,9 +17,9 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js']);
                 <li><a href="" target="_blank"><i class="fab fa-facebook"></i></a></li>
                 <li><a href="" target="_blank"><i class="fab fa-instagram"></i></a></li>
                 <li><a href="" target="_blank"><i class="fas fa-phone"></i></a></li>
-                <li><a href="" target="_blank"><i class="fas fa-envelope"></i></a></li>
                 <li><a href="" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
                 <li><a href="" target="_blank"><i class="fab fa-facebook-messenger"></i></a></li>
+                <li><a href="" target="_blank"><i class="fas fa-envelope"></i></a></li>
             </ul>
         </nav>
         <nav>
