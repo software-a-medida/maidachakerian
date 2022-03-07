@@ -54,7 +54,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js']);
             <div class="item" style="background-image: url('{$path.images}home_16.png')"></div>
         </div>
         <div class="logotype">
-            <h1>Brazilian Bikinis.</h1>
+            <h1>Maida Chakerian.</h1>
             <h3>Beach, Clothes & Fashion.</h3>
         </div>
     </section>
@@ -210,7 +210,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js']);
     <section class="view_all_shop">
         <div>
             <h3>{$lang.view_all_shop_1}</h3>
-            <h2>Brazilian Bikinis.</h2>
+            <h2>Maida Chakerian.</h2>
             <p>{$lang.view_all_shop_2}</p>
             <a href="">{$lang.view_all_shop}</a>
         </div>
@@ -257,7 +257,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js']);
         <div>
             <div>
                 <span><i class="fas fa-phone"></i>+52 (012) 345 67 89</span>
-                <span><i class="fas fa-envelope"></i>vantas@brazilianbikinis.com</span>
+                <span><i class="fas fa-envelope"></i>vantas@maidachakerian.com</span>
                 <span><i class="fas fa-map-marker-alt"></i>Cancún, Quintana roo.</span>
                 <a href="">{$lang.contact_us}</a>
             </div>
@@ -269,7 +269,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js']);
         </figure>
         <div>
             <h3>{$lang.about_us_1}</h3>
-            <h2>Brazilian Bikinis.</h2>
+            <h2>Maida Chakerian.</h2>
             <p>{$lang.about_us_2}</p>
             <a href="">{$lang.know_more}</a>
         </div>

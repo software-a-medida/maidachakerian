@@ -11,4 +11,4 @@ Disallow: /configuration.php
 Disallow: /favicon.ico
 Disallow: /index.php
 Disallow: /README.md
-Sitemap: https://brazilianbikinis.com/sitemap.xml
+Sitemap: https://maidachakerian.com/sitemap.xml

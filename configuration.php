@@ -18,7 +18,7 @@ class Configuration
 	 *
      * @var string $domain
      */
-	public static $domain = 'brazilianbikinis.com';
+	public static $domain = 'maidachakerian.com';
 
 	/**
      * Nombre del sitio web.
@@ -27,7 +27,7 @@ class Configuration
 	 *
      * @var string $web_page
      */
-	public static $web_page = 'Brazilian Bikinis';
+	public static $web_page = 'Maida Chakerian';
 
 	/**
      * Idioma por default
