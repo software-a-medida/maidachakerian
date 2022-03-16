@@ -5,33 +5,12 @@ defined('_EXEC') or die;
 $this->dependencies->add(['css', '{$path.plugins}owl_carousel/assets/owl.carousel.min.css']);
 $this->dependencies->add(['css', '{$path.plugins}owl_carousel/assets/owl.theme.default.min.css']);
 $this->dependencies->add(['js', '{$path.plugins}owl_carousel/owl.carousel.min.js']);
-$this->dependencies->add(['css', '{$path.css}Index/index.css']);
-$this->dependencies->add(['js', '{$path.js}Index/index.js']);
+$this->dependencies->add(['css', '{$path.css}Index/index.css?v=1.0']);
+$this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
 
 ?>
 
 <main class="home">
-    <header class="menu">
-        <nav>
-            <ul>
-                <li><a href="" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="" target="_blank"><i class="fas fa-phone"></i></a></li>
-                <li><a href="" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
-                <li><a href="" target="_blank"><i class="fab fa-facebook-messenger"></i></a></li>
-                <li><a href="" target="_blank"><i class="fas fa-envelope"></i></a></li>
-            </ul>
-        </nav>
-        <nav>
-            <ul>
-                <li><a href=""><i class="fas fa-credit-card"></i>$ 0.00</a></li>
-                <li><a href=""><i class="fas fa-dollar-sign"></i>MXN</a></li>
-                <li><a href=""><i class="fas fa-shopping-cart"></i>0 {$lang.products}</a></li>
-                <li><a href=""><img src="{$path.images}es.png"></a></li>
-                <li><a href=""><img src="{$path.images}en.png"></a></li>
-            </ul>
-        </nav>
-    </header>
     <section class="home">
         <div id="home_left" class="owl-carousel owl-theme">
             <div class="item" style="background-image: url('{$path.images}home_1.png')"></div>
@@ -274,5 +253,4 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js']);
             <a href="">{$lang.know_more}</a>
         </div>
     </section>
-    <!-- <footer></footer> -->
 </main>

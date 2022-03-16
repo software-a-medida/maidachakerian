@@ -18,3 +18,24 @@
 		{$dependencies.css}
 	</head>
 	<body>
+		<header class="menu">
+			<nav>
+				<ul>
+					<li><a href="" target="_blank"><i class="fab fa-facebook"></i></a></li>
+					<li><a href="" target="_blank"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="" target="_blank"><i class="fas fa-phone"></i></a></li>
+					<li><a href="" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+					<li><a href="" target="_blank"><i class="fab fa-facebook-messenger"></i></a></li>
+					<li><a href="" target="_blank"><i class="fas fa-envelope"></i></a></li>
+				</ul>
+			</nav>
+			<nav>
+				<ul>
+					<li><a href=""><i class="fas fa-credit-card"></i>$ 0.00</a></li>
+					<li><a href=""><i class="fas fa-dollar-sign"></i>MXN</a></li>
+					<li><a href=""><i class="fas fa-shopping-cart"></i>0 {$lang.products}</a></li>
+					<li><a href=""><img src="{$path.images}es.png"></a></li>
+					<li><a href=""><img src="{$path.images}en.png"></a></li>
+				</ul>
+			</nav>
+		</header>

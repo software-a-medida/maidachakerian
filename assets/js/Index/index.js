@@ -2,8 +2,6 @@
 
 $(document).ready(function()
 {
-    nav_scroll_down('main.home > header.menu', 'down', 0);
-
     $('#home_left').owlCarousel({
         autoplay: true,
         autoplayTimeout: 2000,
@@ -28,31 +26,3 @@ $(document).ready(function()
         dots:false
     });
 });
-
-function nav_scroll_down(target, css, height)
-{
-    var nav = {
-
-        initialize: function()
-        {
-            $(document).each(function()
-            {
-                nav.scroller()
-            });
-
-            $(document).on('scroll', function()
-            {
-                nav.scroller()
-            });
-        },
-        scroller: function()
-        {
-            if ($(document).scrollTop() > height)
-                $(target).addClass(css);
-            else
-                $(target).removeClass(css);
-        }
-    }
-
-    nav.initialize();
-}
