@@ -191,7 +191,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
             <h3>{$lang.view_all_shop_1}</h3>
             <h2>Maida Chakerian.</h2>
             <p>{$lang.view_all_shop_2}</p>
-            <a href="">{$lang.view_all_shop}</a>
+            <a href="/products">{$lang.view_all_shop}</a>
         </div>
         <figure>
             <img src="{$path.images}view_all_shop.png" alt="About us">
@@ -208,7 +208,6 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                     </figure>
                     <h4>{$lang.our_specialities_3}</h4>
                     <p>{$lang.our_specialities_4}</p>
-                    <a href="">{$lang.quote_now}</a>
                 </article>
                 <article>
                     <figure>
@@ -216,7 +215,6 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                     </figure>
                     <h4>{$lang.our_specialities_5}</h4>
                     <p>{$lang.our_specialities_6}</p>
-                    <a href="">{$lang.quote_now}</a>
                 </article>
                 <article>
                     <figure>
@@ -224,7 +222,6 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                     </figure>
                     <h4>{$lang.our_specialities_7}</h4>
                     <p>{$lang.our_specialities_8}</p>
-                    <a href="">{$lang.quote_now}</a>
                 </article>
             </div>
         </div>
@@ -238,7 +235,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                 <span><i class="fas fa-phone"></i>+52 (012) 345 67 89</span>
                 <span><i class="fas fa-envelope"></i>vantas@maidachakerian.com</span>
                 <span><i class="fas fa-map-marker-alt"></i>Cancún, Quintana roo.</span>
-                <a href="">{$lang.contact_us}</a>
+                <a href="/contact">{$lang.contact_us}</a>
             </div>
         </div>
     </section>
@@ -250,7 +247,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
             <h3>{$lang.about_us_1}</h3>
             <h2>Maida Chakerian.</h2>
             <p>{$lang.about_us_2}</p>
-            <a href="">{$lang.know_more}</a>
+            <a href="/about">{$lang.know_more}</a>
         </div>
     </section>
 </main>

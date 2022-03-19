@@ -21,21 +21,22 @@
 		<header class="menu">
 			<nav>
 				<ul>
-					<li><a href="" target="_blank"><i class="fab fa-facebook"></i></a></li>
-					<li><a href="" target="_blank"><i class="fab fa-instagram"></i></a></li>
-					<li><a href="" target="_blank"><i class="fas fa-phone"></i></a></li>
-					<li><a href="" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
-					<li><a href="" target="_blank"><i class="fab fa-facebook-messenger"></i></a></li>
-					<li><a href="" target="_blank"><i class="fas fa-envelope"></i></a></li>
+					<li><a href="/"><i class="fa-solid fa-house"></i></a></li>
+					<li><a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+					<li><a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="tel:+520123456789" target="_blank"><i class="fas fa-phone"></i></a></li>
+					<li><a href="https://api.whatsapp.com/send?phone=+520123456789" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+					<li><a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-messenger"></i></a></li>
+					<li><a href="/contact"><i class="fas fa-envelope"></i></a></li>
 				</ul>
 			</nav>
 			<nav>
 				<ul>
-					<li><a href=""><i class="fas fa-credit-card"></i>$ 0.00</a></li>
-					<li><a href=""><i class="fas fa-dollar-sign"></i>MXN</a></li>
-					<li><a href=""><i class="fas fa-shopping-cart"></i>0 {$lang.products}</a></li>
-					<li><a href=""><img src="{$path.images}es.png"></a></li>
-					<li><a href=""><img src="{$path.images}en.png"></a></li>
+					<li><a href="/cart"><i class="fas fa-credit-card"></i>$ 0.00</a></li>
+					<li><a href="/cart"><i class="fas fa-dollar-sign"></i>MXN</a></li>
+					<li><a href="/cart"><i class="fas fa-cart-plus"></i>0 {$lang.products}</a></li>
+					<li><a href="?lang=es"><img src="{$path.images}es.png"></a></li>
+					<li><a href="?lang=en"><img src="{$path.images}en.png"></a></li>
 				</ul>
 			</nav>
 		</header>
