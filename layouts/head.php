@@ -32,11 +32,11 @@
 			</nav>
 			<nav>
 				<ul>
+					<li><a href="/cart"><i class="fas fa-cart-plus"></i>0 {$lang.products}</a></li>
 					<li><a href="/cart"><i class="fas fa-credit-card"></i>$ 0.00</a></li>
 					<li><a href="/cart"><i class="fas fa-dollar-sign"></i>MXN</a></li>
-					<li><a href="/cart"><i class="fas fa-cart-plus"></i>0 {$lang.products}</a></li>
-					<li><a href="?lang=es"><img src="{$path.images}es.png"></a></li>
-					<li><a href="?lang=en"><img src="{$path.images}en.png"></a></li>
+					<li><a href="?lang=es"><img src="{$path.images}es.png" alt="ES"></a></li>
+					<li><a href="?lang=en"><img src="{$path.images}en.png" alt="EN"></a></li>
 				</ul>
 			</nav>
 		</header>

@@ -91,7 +91,6 @@ main.home > section.categories > article > figure {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0px;
     overflow: hidden;
 }
 
@@ -134,7 +133,6 @@ main.home > section.categories > article > div > a {
     box-sizing: border-box;
     background-color: #fff;
     font-size: 14px;
-    font-weight: 400;
     color: #000;
     cursor: pointer;
 }
@@ -212,7 +210,6 @@ main.home > section.about_us > div > a {
     box-sizing: border-box;
     background-color: #fff;
     font-size: 14px;
-    font-weight: 400;
     color: #000;
     cursor: pointer;
 }
@@ -232,7 +229,6 @@ main.home > section.about_us > figure {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    margin: 0px;
 }
 
 main.home > section.view_all_shop > figure > img {
@@ -259,7 +255,6 @@ main.home > section.contact_us > figure {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0px;
     overflow: hidden;
 }
 
@@ -320,7 +315,6 @@ main.home > section.contact_us > div > div > a {
     box-sizing: border-box;
     background-color: #fff;
     font-size: 14px;
-    font-weight: 400;
     color: #000;
     cursor: pointer;
 }

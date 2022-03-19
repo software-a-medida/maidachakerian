@@ -49,7 +49,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                     </figure>
                     <h4>Lorem ipsum dolor</h4>
                     <span>$ 400.00 MXN</span>
-                    <a href=""><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
+                    <a data-button-modal="details"><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
                 </article>
                 <article>
                     <figure>
@@ -58,7 +58,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                     </figure>
                     <h4>Lorem ipsum dolor</h4>
                     <span>$ 850.00 MXN</span>
-                    <a href=""><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
+                    <a data-button-modal="details"><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
                 </article>
                 <article>
                     <figure>
@@ -67,7 +67,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                     </figure>
                     <h4>Lorem ipsum dolor</h4>
                     <span>$ 300.00 MXN</span>
-                    <a href=""><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
+                    <a data-button-modal="details"><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
                 </article>
                 <article>
                     <figure>
@@ -76,7 +76,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                     </figure>
                     <h4>Lorem ipsum dolor</h4>
                     <span>$ 450.00 MXN</span>
-                    <a href=""><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
+                    <a data-button-modal="details"><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
                 </article>
             </div>
         </div>
@@ -84,7 +84,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
     <section class="categories">
         <article>
             <figure>
-                <img src="{$path.images}categories_1.png" alt="Service">
+                <img src="{$path.images}categories_1.png" alt="Category">
             </figure>
             <div>
                 <h4>Dama.</h4>
@@ -93,7 +93,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
         </article>
         <article>
             <figure>
-                <img src="{$path.images}categories_2.png" alt="Service">
+                <img src="{$path.images}categories_2.png" alt="Category">
             </figure>
             <div>
                 <h4>Juvenil.</h4>
@@ -102,7 +102,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
         </article>
         <article>
             <figure>
-                <img src="{$path.images}categories_3.png" alt="Service">
+                <img src="{$path.images}categories_3.png" alt="Category">
             </figure>
             <div>
                 <h4>Niña.</h4>
@@ -123,7 +123,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                     <div>
                         <h4>Lorem ipsum dolor</h4>
                         <span>$ 500.00 MXN</span>
-                        <a href=""><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
+                        <a data-button-modal="details"><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
                     </div>
                 </article>
                 <article>
@@ -134,7 +134,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                     <div>
                         <h4>Lorem ipsum dolor</h4>
                         <span>$ 600.00 MXN</span>
-                        <a href=""><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
+                        <a data-button-modal="details"><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
                     </div>
                 </article>
                 <article>
@@ -145,7 +145,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                     <div>
                         <h4>Lorem ipsum dolor</h4>
                         <span>$ 400.00 MXN</span>
-                        <a href=""><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
+                        <a data-button-modal="details"><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
                     </div>
                 </article>
             </div>
@@ -158,7 +158,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                     <div>
                         <h4>Lorem ipsum dolor</h4>
                         <span>$ 450.00 MXN</span>
-                        <a href=""><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
+                        <a data-button-modal="details"><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
                     </div>
                 </article>
                 <article>
@@ -169,7 +169,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                     <div>
                         <h4>Lorem ipsum dolor</h4>
                         <span>$ 800.00 MXN</span>
-                        <a href=""><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
+                        <a data-button-modal="details"><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
                     </div>
                 </article>
                 <article>
@@ -180,7 +180,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                     <div>
                         <h4>Lorem ipsum dolor</h4>
                         <span>$ 250.00 MXN</span>
-                        <a href=""><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
+                        <a data-button-modal="details"><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
                     </div>
                 </article>
             </div>
@@ -204,21 +204,21 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
             <div>
                 <article>
                     <figure>
-                        <img src="{$path.images}our_specialities_1.png" alt="Our specialities">
+                        <img src="{$path.images}our_specialities_1.png" alt="Our speciality">
                     </figure>
                     <h4>{$lang.our_specialities_3}</h4>
                     <p>{$lang.our_specialities_4}</p>
                 </article>
                 <article>
                     <figure>
-                        <img src="{$path.images}our_specialities_2.png" alt="Our specialities">
+                        <img src="{$path.images}our_specialities_2.png" alt="Our speciality">
                     </figure>
                     <h4>{$lang.our_specialities_5}</h4>
                     <p>{$lang.our_specialities_6}</p>
                 </article>
                 <article>
                     <figure>
-                        <img src="{$path.images}our_specialities_3.png" alt="Our specialities">
+                        <img src="{$path.images}our_specialities_3.png" alt="Our speciality">
                     </figure>
                     <h4>{$lang.our_specialities_7}</h4>
                     <p>{$lang.our_specialities_8}</p>

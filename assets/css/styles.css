@@ -65,12 +65,10 @@ header.menu > nav > ul > li > a {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0px;
     padding: 0px;
 }
 
 header.menu > nav > ul > li > a {
-    font-weight: 400;
     color: #fff;
 }
 
@@ -145,7 +143,6 @@ main.products > section.filters > p {
     max-width: 800px;
     margin-bottom: 50px;
     font-size: 18px;
-    font-weight: 400;
     text-align: center;
     color: #444;
 }
@@ -303,7 +300,6 @@ main.products > section.products > div > div > article > figure {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0px;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -340,7 +336,6 @@ main.products > section.products > div > div > article > figure > a {
     justify-content: center;
     background-color: #000;
     font-size: 18px;
-    font-weight: 400;
     color: #fff;
     opacity: 0;
     transition: 400ms;
@@ -382,7 +377,6 @@ main.home > section.new_arrivals > div > div > article > span,
 main.home > section.we_recommend_you > div > div > article > div > span,
 main.products > section.products > div > div > article > div > span,
 main.home > section.our_specialities > div > div > article > p {
-    font-weight: 400;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -418,7 +412,6 @@ main.products > section.products > div > div > article > div > a {
     box-sizing: border-box;
     background-color: #e0e0e0;
     font-size: 14px;
-    font-weight: 400;
     color: #444;
 }
 
@@ -436,6 +429,122 @@ main.home > section.we_recommend_you > div > div > article > div > a > i,
 main.products > section.products > div > div > article > div > a > i {
     margin-right: 5px;
     font-size: 18px;
+}
+
+/*  */
+
+section[data-modal="details"].modal > div > main > form[name="details"] {
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+section[data-modal="details"].modal > div > main > form[name="details"] > div,
+section[data-modal="details"].modal > div > main > form[name="details"] > div > div {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+section[data-modal="details"].modal > div > main > form[name="details"] > div {
+    flex-direction: column;
+}
+
+section[data-modal="details"].modal > div > main > form[name="details"] > div > div {
+    margin-bottom: 50px;
+}
+
+section[data-modal="details"].modal > div > main > form[name="details"] > div > div:last-child {
+    margin-bottom: 0px;
+}
+
+section[data-modal="details"].modal > div > main > form[name="details"] > div > div > figure {
+    width: calc((100% / 6) - 10px);
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 5px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+section[data-modal="details"].modal > div > main > form[name="details"] > div > div > figure > img {
+    width: 100%;
+    height: auto;
+}
+
+section[data-modal="details"].modal > div > main > form[name="details"] > div > h2 {
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #444;
+}
+
+section[data-modal="details"].modal > div > main > form[name="details"] > div > span {
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #444;
+}
+
+section[data-modal="details"].modal > div > main > form[name="details"] > div > p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+section[data-modal="details"].modal > div > main > form[name="details"] > div > div > fieldset {
+    width: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-right: 15px;
+}
+
+section[data-modal="details"].modal > div > main > form[name="details"] > div > div > fieldset > h4 {
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #444;
+}
+
+section[data-modal="details"].modal > div > main > form[name="details"] > div > div > fieldset > select,
+section[data-modal="details"].modal > div > main > form[name="details"] > div > div > fieldset > input {
+    width: 200px;
+    height: 50px;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    border: 0px;
+    border-radius: 5px;
+    background-color: #eee;
+}
+
+section[data-modal="details"].modal > div > main > form[name="details"] > div > div > button,
+section[data-modal="details"].modal > div > main > form[name="details"] > div > div > a {
+    width: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    border: 0px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #000;
+}
+
+section[data-modal="details"].modal > div > main > form[name="details"] > div > div > button:hover,
+section[data-modal="details"].modal > div > main > form[name="details"] > div > div > a:hover {
+    color: #fff !important;
 }
 
 /*  */
