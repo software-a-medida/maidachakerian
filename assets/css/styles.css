@@ -347,6 +347,12 @@ main.products > section.products > div > div > article > figure:hover > a {
     opacity: 1;
 }
 
+main.home > section.new_arrivals > div > div > article > figure > a:hover,
+main.home > section.we_recommend_you > div > div > article > figure > a:hover,
+main.products > section.products > div > div > article > figure > a:hover {
+    color: #fff !important;
+}
+
 main.home > section.we_recommend_you > div > div > article > div,
 main.products > section.products > div > div > article > div {
     width: calc(100% - 150px);

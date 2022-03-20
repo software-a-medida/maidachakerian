@@ -45,7 +45,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                 <article>
                     <figure>
                         <img src="{$path.images}new_arrivals_1.png" alt="New arrival">
-                        <a href="">Deportivo</a>
+                        <a href="/products">Deportivo</a>
                     </figure>
                     <h4>Lorem ipsum dolor</h4>
                     <span>$ 400.00 MXN</span>
@@ -56,7 +56,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                 <article>
                     <figure>
                         <img src="{$path.images}new_arrivals_2.png" alt="New arrival">
-                        <a href="">Moda</a>
+                        <a href="/products">Moda</a>
                     </figure>
                     <h4>Lorem ipsum dolor</h4>
                     <span>$ 850.00 MXN</span>
@@ -67,7 +67,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                 <article>
                     <figure>
                         <img src="{$path.images}new_arrivals_3.png" alt="New arrival">
-                        <a href="">Casual</a>
+                        <a href="/products">Casual</a>
                     </figure>
                     <h4>Lorem ipsum dolor</h4>
                     <span>$ 300.00 MXN</span>
@@ -78,7 +78,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                 <article>
                     <figure>
                         <img src="{$path.images}new_arrivals_4.png" alt="New arrival">
-                        <a href="">Sensual</a>
+                        <a href="/products">Sensual</a>
                     </figure>
                     <h4>Lorem ipsum dolor</h4>
                     <span>$ 450.00 MXN</span>
@@ -96,7 +96,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
             </figure>
             <div>
                 <h4>Dama.</h4>
-                <a href="">{$lang.view_all}</a>
+                <a href="/products">{$lang.view_all}</a>
             </div>
         </article>
         <article>
@@ -105,7 +105,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
             </figure>
             <div>
                 <h4>Juvenil.</h4>
-                <a href="">{$lang.view_all}</a>
+                <a href="/products">{$lang.view_all}</a>
             </div>
         </article>
         <article>
@@ -114,7 +114,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
             </figure>
             <div>
                 <h4>Niña.</h4>
-                <a href="">{$lang.view_all}</a>
+                <a href="/products">{$lang.view_all}</a>
             </div>
         </article>
     </section>
@@ -126,7 +126,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                 <article>
                     <figure>
                         <img src="{$path.images}we_recommend_you_1.png" alt="We recommend you">
-                        <a href="">Deportivo</a>
+                        <a href="/products">Deportivo</a>
                     </figure>
                     <div>
                         <h4>Lorem ipsum dolor</h4>
@@ -139,7 +139,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                 <article>
                     <figure>
                         <img src="{$path.images}we_recommend_you_2.png" alt="We recommend you">
-                        <a href="">Moda</a>
+                        <a href="/products">Moda</a>
                     </figure>
                     <div>
                         <h4>Lorem ipsum dolor</h4>
@@ -152,7 +152,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                 <article>
                     <figure>
                         <img src="{$path.images}we_recommend_you_3.png" alt="We recommend you">
-                        <a href="">Casual</a>
+                        <a href="/products">Casual</a>
                     </figure>
                     <div>
                         <h4>Lorem ipsum dolor</h4>
@@ -167,7 +167,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                 <article>
                     <figure>
                         <img src="{$path.images}we_recommend_you_1.png" alt="We recommend you">
-                        <a href="">Deportivo</a>
+                        <a href="/products">Deportivo</a>
                     </figure>
                     <div>
                         <h4>Lorem ipsum dolor</h4>
@@ -180,7 +180,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                 <article>
                     <figure>
                         <img src="{$path.images}we_recommend_you_2.png" alt="We recommend you">
-                        <a href="">Moda</a>
+                        <a href="/products">Moda</a>
                     </figure>
                     <div>
                         <h4>Lorem ipsum dolor</h4>
@@ -193,7 +193,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                 <article>
                     <figure>
                         <img src="{$path.images}we_recommend_you_3.png" alt="We recommend you">
-                        <a href="">Casual</a>
+                        <a href="/products">Casual</a>
                     </figure>
                     <div>
                         <h4>Lorem ipsum dolor</h4>
