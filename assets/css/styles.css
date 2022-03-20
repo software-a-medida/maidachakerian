@@ -99,11 +99,22 @@ header.menu > nav:last-child > ul > li > a > img {
 
 /*  */
 
+main.products > section.home,
+main.cart > section.home {
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+}
+
+/*  */
+
 main.home > section.new_arrivals,
 main.home > section.we_recommend_you,
 main.home > section.our_specialities,
 main.products > section.filters,
-main.products > section.products {
+main.products > section.products,
+main.cart > section.cart,
+main.cart > section.total {
     width: 100%;
     display: flex;
     align-items: center;
@@ -119,14 +130,20 @@ main.products > section.products {
     padding: 100px 50px;
 }
 
-main.products > section.filters {
+main.products > section.filters,
+main.cart > section.cart  {
     padding: 100px 50px 0px 50px;
+}
+
+main.cart > section.total {
+    padding: 50px 50px 100px 50px;
 }
 
 main.home > section.new_arrivals > h2,
 main.home > section.we_recommend_you > h2,
 main.home > section.our_specialities > h2,
-main.products > section.filters > h2 {
+main.products > section.filters > h2,
+main.cart > section.cart > h2 {
     margin-bottom: 20px;
     font-family: sans-serif;
     font-size: 80px;
@@ -139,7 +156,8 @@ main.products > section.filters > h2 {
 main.home > section.new_arrivals > p,
 main.home > section.we_recommend_you > p,
 main.home > section.our_specialities > p,
-main.products > section.filters > p {
+main.products > section.filters > p,
+main.cart > section.cart > p {
     max-width: 800px;
     margin-bottom: 50px;
     font-size: 18px;
@@ -153,6 +171,41 @@ main.home > section.our_specialities > div,
 main.products > section.filters > form,
 main.products > section.products > div {
     width: 100%;
+}
+
+main.cart > section.total > div {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main.cart > section.total > div > h2 {
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #444;
+}
+
+main.cart > section.total > div > a {
+    width: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #000;
+    font-size: 14px;
+    color: #fff;
+}
+
+main.cart > section.total > div > a:hover {
+    color: #fff !important;
 }
 
 main.home > section.new_arrivals > div > div,
@@ -258,8 +311,14 @@ main.home > section.our_specialities > div > div > article {
     flex-direction: column;
 }
 
+main.cart > section.cart > div > article {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
 main.home > section.we_recommend_you > div > div > article::after,
-main.products > section.products > div > div > article::after {
+main.products > section.products > div > div > article::after,
+main.cart > section.cart > div > article::after {
     content: '';
     display: block;
     clear: both;
@@ -279,6 +338,10 @@ main.products > section.products > div > div > article:last-child {
     padding-right: 0px;
 }
 
+main.cart > section.cart > div > article:last-child {
+    margin-bottom: 0px;
+}
+
 main.home > section.new_arrivals > div > div > article > figure {
     width: 100%;
     height: 350px;
@@ -292,9 +355,9 @@ main.home > section.new_arrivals > div > div > article > figure {
 }
 
 main.home > section.we_recommend_you > div > div > article > figure,
-main.products > section.products > div > div > article > figure {
+main.products > section.products > div > div > article > figure,
+main.cart > section.cart > div > article > figure {
     width: 150px;
-    height: 200px;
     float: left;
     position: relative;
     display: flex;
@@ -302,6 +365,15 @@ main.products > section.products > div > div > article > figure {
     justify-content: center;
     border-radius: 10px;
     overflow: hidden;
+}
+
+main.home > section.we_recommend_you > div > div > article > figure,
+main.products > section.products > div > div > article > figure {
+    height: 200px;
+}
+
+main.cart > section.cart > div > article > figure {
+    height: 150px;
 }
 
 main.home > section.our_specialities > div > div > article > figure {
@@ -318,7 +390,8 @@ main.home > section.our_specialities > div > div > article > figure {
 main.home > section.new_arrivals > div > div > article > figure > img,
 main.home > section.we_recommend_you > div > div > article > figure > img,
 main.home > section.our_specialities > div > div > article > figure > img,
-main.products > section.products > div > div > article > figure > img {
+main.products > section.products > div > div > article > figure > img,
+main.cart > section.cart > div > article > figure > img {
     width: 100%;
     height: auto;
     min-height: 100%;
@@ -354,7 +427,8 @@ main.products > section.products > div > div > article > figure > a:hover {
 }
 
 main.home > section.we_recommend_you > div > div > article > div,
-main.products > section.products > div > div > article > div {
+main.products > section.products > div > div > article > div,
+main.cart > section.cart > div > article > div {
     width: calc(100% - 150px);
     height: 100%;
     float: right;
@@ -369,7 +443,8 @@ main.products > section.products > div > div > article > div {
 main.home > section.new_arrivals > div > div > article > h4,
 main.home > section.we_recommend_you > div > div > article > div > h4,
 main.home > section.our_specialities > div > div > article > h4,
-main.products > section.products > div > div > article > div > h4 {
+main.products > section.products > div > div > article > div > h4,
+main.cart > section.cart > div > article > div > h4 {
     margin-bottom: 5px;
     font-size: 24px;
     font-weight: 600;
@@ -382,6 +457,7 @@ main.products > section.products > div > div > article > div > h4 {
 main.home > section.new_arrivals > div > div > article > span,
 main.home > section.we_recommend_you > div > div > article > div > span,
 main.products > section.products > div > div > article > div > span,
+main.cart > section.cart > div > article > div > span,
 main.home > section.our_specialities > div > div > article > p {
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -400,6 +476,11 @@ main.products > section.products > div > div > article > div > span {
     margin-bottom: 10px;
 }
 
+main.cart > section.cart > div > article > div > span {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
 main.home > section.new_arrivals > div > div > article > p {
     font-size: 14px;
     text-align: center;
@@ -416,7 +497,8 @@ main.products > section.products > div > div > article > div > p {
 
 main.home > section.new_arrivals > div > div > article > a,
 main.home > section.we_recommend_you > div > div > article > div > a,
-main.products > section.products > div > div > article > div > a {
+main.products > section.products > div > div > article > div > a,
+main.cart > section.cart > div > article > div > a {
     width: auto;
     height: 50px;
     display: flex;
@@ -434,46 +516,62 @@ main.home > section.new_arrivals > div > div > article > a {
 }
 
 main.home > section.we_recommend_you > div > div > article > div > a,
-main.products > section.products > div > div > article > div > a {
+main.products > section.products > div > div > article > div > a,
+main.cart > section.cart > div > article > div > a {
     border-radius: 5px;
 }
 
 main.home > section.new_arrivals > div > div > article > a > i,
 main.home > section.we_recommend_you > div > div > article > div > a > i,
-main.products > section.products > div > div > article > div > a > i {
+main.products > section.products > div > div > article > div > a > i,
+main.cart > section.cart > div > article > div > a > i {
     margin-right: 5px;
     font-size: 18px;
 }
 
 /*  */
 
-section[data-modal="details"].modal > div > main > form[name="details"] {
-    width: 100%;
-    padding: 50px;
-    box-sizing: border-box;
+section[data-modal="details"].modal > div > main > form[name="details"],
+section[data-modal="details"].modal > div > main > form[name="details"] > div,
+section[data-modal="payment"].modal > div > main > form[name="payment"] {
+    display: flex;
 }
 
-section[data-modal="details"].modal > div > main > form[name="details"] > div,
-section[data-modal="details"].modal > div > main > form[name="details"] > div > div {
-    width: 100%;
-    display: flex;
+section[data-modal="details"].modal > div > main > form[name="details"],
+section[data-modal="details"].modal > div > main > form[name="details"] > div {
     align-items: flex-start;
     justify-content: flex-start;
 }
 
-section[data-modal="details"].modal > div > main > form[name="details"] > div {
+section[data-modal="details"].modal > div > main > form[name="details"] {
     flex-direction: column;
 }
 
-section[data-modal="details"].modal > div > main > form[name="details"] > div > div {
+section[data-modal="payment"].modal > div > main > form[name="payment"] {
+    align-items: flex-start;
+    justify-content: center;
+}
+
+section[data-modal="details"].modal > div > main > form[name="details"],
+section[data-modal="payment"].modal > div > main > form[name="payment"] {
+    padding-top: 100px;
+    box-sizing: border-box;
+}
+
+section[data-modal="details"].modal > div > main > form[name="details"] > div {
+    width: 100%;
     margin-bottom: 50px;
 }
 
-section[data-modal="details"].modal > div > main > form[name="details"] > div > div:last-child {
+section[data-modal="details"].modal > div > main > form[name="details"] > div:last-child {
     margin-bottom: 0px;
 }
 
-section[data-modal="details"].modal > div > main > form[name="details"] > div > div > figure {
+section[data-modal="payment"].modal > div > main > form[name="payment"] > div {
+    width: 800px;
+}
+
+section[data-modal="details"].modal > div > main > form[name="details"] > div > figure {
     width: calc((100% / 6) - 10px);
     height: 200px;
     display: flex;
@@ -484,12 +582,12 @@ section[data-modal="details"].modal > div > main > form[name="details"] > div > 
     overflow: hidden;
 }
 
-section[data-modal="details"].modal > div > main > form[name="details"] > div > div > figure > img {
+section[data-modal="details"].modal > div > main > form[name="details"] > div > figure > img {
     width: 100%;
     height: auto;
 }
 
-section[data-modal="details"].modal > div > main > form[name="details"] > div > h2 {
+section[data-modal="details"].modal > div > main > form[name="details"] > h2 {
     margin-bottom: 5px;
     font-size: 24px;
     font-weight: 600;
@@ -499,7 +597,7 @@ section[data-modal="details"].modal > div > main > form[name="details"] > div > 
     color: #444;
 }
 
-section[data-modal="details"].modal > div > main > form[name="details"] > div > span {
+section[data-modal="details"].modal > div > main > form[name="details"] > span {
     font-size: 14px;
     margin-bottom: 10px;
     text-overflow: ellipsis;
@@ -508,12 +606,12 @@ section[data-modal="details"].modal > div > main > form[name="details"] > div > 
     color: #444;
 }
 
-section[data-modal="details"].modal > div > main > form[name="details"] > div > p {
+section[data-modal="details"].modal > div > main > form[name="details"] > p {
     font-size: 16px;
     margin-bottom: 10px;
 }
 
-section[data-modal="details"].modal > div > main > form[name="details"] > div > div > fieldset {
+section[data-modal="details"].modal > div > main > form[name="details"] > div > fieldset {
     width: auto;
     display: flex;
     align-items: flex-start;
@@ -522,16 +620,34 @@ section[data-modal="details"].modal > div > main > form[name="details"] > div > 
     margin-right: 15px;
 }
 
-section[data-modal="details"].modal > div > main > form[name="details"] > div > div > fieldset > h4 {
+section[data-modal="payment"].modal > div > main > form[name="payment"] > div > div > fieldset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+section[data-modal="details"].modal > div > main > form[name="details"] > div > fieldset > h4,
+section[data-modal="payment"].modal > div > main > form[name="payment"] > div > div > fieldset > h4 {
+    width: 100%;
     margin-bottom: 5px;
-    font-size: 24px;
     font-weight: 600;
     color: #444;
 }
 
-section[data-modal="details"].modal > div > main > form[name="details"] > div > div > fieldset > select,
-section[data-modal="details"].modal > div > main > form[name="details"] > div > div > fieldset > input {
-    width: 200px;
+section[data-modal="details"].modal > div > main > form[name="details"] > div > fieldset > h4 {
+    font-size: 24px;
+}
+
+section[data-modal="payment"].modal > div > main > form[name="payment"] > div > div > fieldset > h4 {
+    font-size: 18px;
+}
+
+section[data-modal="details"].modal > div > main > form[name="details"] > div > fieldset > select,
+section[data-modal="payment"].modal > div > main > form[name="payment"] > div > div > fieldset > select,
+section[data-modal="details"].modal > div > main > form[name="details"] > div > fieldset > input,
+section[data-modal="payment"].modal > div > main > form[name="payment"] > div > div > fieldset > input {
     height: 50px;
     padding: 0px 15px;
     box-sizing: border-box;
@@ -540,8 +656,18 @@ section[data-modal="details"].modal > div > main > form[name="details"] > div > 
     background-color: #eee;
 }
 
-section[data-modal="details"].modal > div > main > form[name="details"] > div > div > button,
-section[data-modal="details"].modal > div > main > form[name="details"] > div > div > a {
+section[data-modal="details"].modal > div > main > form[name="details"] > div > fieldset > select,
+section[data-modal="details"].modal > div > main > form[name="details"] > div > fieldset > input {
+    width: 200px;
+}
+
+section[data-modal="payment"].modal > div > main > form[name="payment"] > div > div > fieldset > select,
+section[data-modal="payment"].modal > div > main > form[name="payment"] > div > div > fieldset > input {
+    width: 100%;
+}
+
+section[data-modal="details"].modal > div > main > form[name="details"] > div > button,
+section[data-modal="details"].modal > div > main > form[name="details"] > div > a {
     width: auto;
     height: 50px;
     display: flex;
@@ -556,13 +682,33 @@ section[data-modal="details"].modal > div > main > form[name="details"] > div > 
     background-color: #000;
 }
 
-section[data-modal="details"].modal > div > main > form[name="details"] > div > div > button:hover,
-section[data-modal="details"].modal > div > main > form[name="details"] > div > div > a:hover {
+section[data-modal="details"].modal > div > main > form[name="details"] > div > button:hover,
+section[data-modal="details"].modal > div > main > form[name="details"] > div > a:hover {
     color: #fff !important;
 }
 
-section[data-modal="details"].modal > div > main > form[name="details"] > div > div > button > i {
+section[data-modal="details"].modal > div > main > form[name="details"] > div > button > i {
     margin-right: 10px;
+}
+
+section[data-modal="payment"].modal > div > main > form[name="payment"] > div > div > fieldset > a {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #000;
+}
+
+section[data-modal="payment"].modal > div > main > form[name="payment"] > div > div > fieldset > a:last-child {
+    margin-bottom: 0px;
+}
+
+section[data-modal="payment"].modal > div > main > form[name="payment"] > div > div > fieldset > a:hover {
+    color: #fff !important;
 }
 
 /*  */
@@ -570,23 +716,20 @@ section[data-modal="details"].modal > div > main > form[name="details"] > div > 
 footer.menu {
     width: 100%;
     height: 70px;
-    background-color: #000;
-}
-
-footer.menu > div > div {
-    width: 100%;
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    padding: 0px 50px;
+    box-sizing: border-box;
+    background-color: #000;
 }
 
-footer.menu > div > div > p,
-footer.menu > div > div > p > a {
+footer.menu > p,
+footer.menu > p > a {
     font-size: 14px;
     color: #fff;
 }
 
-footer.menu > div > div > p span {
+footer.menu > p > a {
     color: #ff5722;
 }

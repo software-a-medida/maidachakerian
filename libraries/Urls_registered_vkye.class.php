@@ -16,6 +16,10 @@ class Urls_registered_vkye
             '/products' => [
                 'controller' => 'Products',
                 'method' => 'index'
+            ],
+            '/cart' => [
+                'controller' => 'Cart',
+                'method' => 'index'
             ]
         ];
     }
