@@ -49,6 +49,8 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                     </figure>
                     <h4>Lorem ipsum dolor</h4>
                     <span>$ 400.00 MXN</span>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                    <span>Azul / CH - M - XL</span>
                     <a data-button-modal="details"><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
                 </article>
                 <article>
@@ -58,6 +60,8 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                     </figure>
                     <h4>Lorem ipsum dolor</h4>
                     <span>$ 850.00 MXN</span>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                    <span>Negro / CH - M - XL</span>
                     <a data-button-modal="details"><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
                 </article>
                 <article>
@@ -67,6 +71,8 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                     </figure>
                     <h4>Lorem ipsum dolor</h4>
                     <span>$ 300.00 MXN</span>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                    <span>Blanco / CH - M - XL</span>
                     <a data-button-modal="details"><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
                 </article>
                 <article>
@@ -76,6 +82,8 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                     </figure>
                     <h4>Lorem ipsum dolor</h4>
                     <span>$ 450.00 MXN</span>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                    <span>Negro / CH - M - XL</span>
                     <a data-button-modal="details"><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
                 </article>
             </div>
@@ -123,6 +131,8 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                     <div>
                         <h4>Lorem ipsum dolor</h4>
                         <span>$ 500.00 MXN</span>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                        <span>Negro / CH - M - XL</span>
                         <a data-button-modal="details"><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
                     </div>
                 </article>
@@ -134,6 +144,8 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                     <div>
                         <h4>Lorem ipsum dolor</h4>
                         <span>$ 600.00 MXN</span>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                        <span>Lila / CH - M - XL</span>
                         <a data-button-modal="details"><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
                     </div>
                 </article>
@@ -145,6 +157,8 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                     <div>
                         <h4>Lorem ipsum dolor</h4>
                         <span>$ 400.00 MXN</span>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                        <span>Azul / CH - M - XL</span>
                         <a data-button-modal="details"><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
                     </div>
                 </article>
@@ -152,34 +166,40 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
             <div>
                 <article>
                     <figure>
-                        <img src="{$path.images}we_recommend_you_4.png" alt="We recommend you">
+                        <img src="{$path.images}we_recommend_you_1.png" alt="We recommend you">
                         <a href="">Deportivo</a>
                     </figure>
                     <div>
                         <h4>Lorem ipsum dolor</h4>
-                        <span>$ 450.00 MXN</span>
+                        <span>$ 500.00 MXN</span>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                        <span>Negro / CH - M - XL</span>
                         <a data-button-modal="details"><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
                     </div>
                 </article>
                 <article>
                     <figure>
-                        <img src="{$path.images}we_recommend_you_5.png" alt="We recommend you">
+                        <img src="{$path.images}we_recommend_you_2.png" alt="We recommend you">
                         <a href="">Moda</a>
                     </figure>
                     <div>
                         <h4>Lorem ipsum dolor</h4>
-                        <span>$ 800.00 MXN</span>
+                        <span>$ 600.00 MXN</span>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                        <span>Lila / CH - M - XL</span>
                         <a data-button-modal="details"><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
                     </div>
                 </article>
                 <article>
                     <figure>
-                        <img src="{$path.images}we_recommend_you_6.png" alt="We recommend you">
+                        <img src="{$path.images}we_recommend_you_3.png" alt="We recommend you">
                         <a href="">Casual</a>
                     </figure>
                     <div>
                         <h4>Lorem ipsum dolor</h4>
-                        <span>$ 250.00 MXN</span>
+                        <span>$ 400.00 MXN</span>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                        <span>Azul / CH - M - XL</span>
                         <a data-button-modal="details"><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
                     </div>
                 </article>

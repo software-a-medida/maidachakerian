@@ -383,17 +383,25 @@ main.home > section.our_specialities > div > div > article > p {
     color: #444;
 }
 
-main.home > section.new_arrivals > div > div > article > span,
-main.home > section.we_recommend_you > div > div > article > div > span {
+main.home > section.new_arrivals > div > div > article > span {
     font-size: 16px;
     margin-bottom: 20px;
 }
 
+main.home > section.we_recommend_you > div > div > article > div > span,
 main.products > section.products > div > div > article > div > span {
     font-size: 14px;
     margin-bottom: 10px;
 }
 
+main.home > section.new_arrivals > div > div > article > p {
+    font-size: 14px;
+    text-align: center;
+    color: #757575;
+    margin-bottom: 20px;
+}
+
+main.home > section.we_recommend_you > div > div > article > div > p,
 main.products > section.products > div > div > article > div > p {
     font-size: 12px;
     color: #757575;
@@ -415,11 +423,11 @@ main.products > section.products > div > div > article > div > a {
     color: #444;
 }
 
-main.home > section.new_arrivals > div > div > article > a,
-main.home > section.we_recommend_you > div > div > article > div > a {
+main.home > section.new_arrivals > div > div > article > a {
     border-radius: 50px;
 }
 
+main.home > section.we_recommend_you > div > div > article > div > a,
 main.products > section.products > div > div > article > div > a {
     border-radius: 5px;
 }
@@ -545,6 +553,10 @@ section[data-modal="details"].modal > div > main > form[name="details"] > div > 
 section[data-modal="details"].modal > div > main > form[name="details"] > div > div > button:hover,
 section[data-modal="details"].modal > div > main > form[name="details"] > div > div > a:hover {
     color: #fff !important;
+}
+
+section[data-modal="details"].modal > div > main > form[name="details"] > div > div > button > i {
+    margin-right: 10px;
 }
 
 /*  */

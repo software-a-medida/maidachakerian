@@ -31,10 +31,6 @@
                             <span>{$lang.send}: $ 15.00 MXN</span>
                             <div>
                                 <fieldset>
-                                    <h4>{$lang.amount}</h4>
-                                    <input type="number" name="amount" value="1">
-                                </fieldset>
-                                <fieldset>
                                     <h4>{$lang.size}</h4>
                                     <select name="size">
                                         <option value="">CH</option>
@@ -48,10 +44,14 @@
                                         <option value="">Negro</option>
                                     </select>
                                 </fieldset>
+                                <fieldset>
+                                    <h4>{$lang.amount}</h4>
+                                    <input type="number" name="amount" value="1">
+                                </fieldset>
                             </div>
                             <div>
-                                <button type="submit">{$lang.add_to_cart}</button>
                                 <a button-close>{$lang.cancel}</a>
+                                <button type="submit"><i class="fas fa-cart-plus"></i>{$lang.add_to_cart}</button>
                             </div>
                         </div>
                     </form>
