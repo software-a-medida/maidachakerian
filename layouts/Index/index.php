@@ -47,7 +47,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                         <img src="{$path.images}new_arrivals_1.png" alt="New arrival">
                         <a href="/products">Deportivo</a>
                     </figure>
-                    <h4>Lorem ipsum dolor</h4>
+                    <h4>Lorem ipsum dolor.</h4>
                     <span>$ 400.00 MXN</span>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
                     <span>Azul / CH - M - XL</span>
@@ -58,7 +58,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                         <img src="{$path.images}new_arrivals_2.png" alt="New arrival">
                         <a href="/products">Moda</a>
                     </figure>
-                    <h4>Lorem ipsum dolor</h4>
+                    <h4>Lorem ipsum dolor.</h4>
                     <span>$ 850.00 MXN</span>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
                     <span>Negro / CH - M - XL</span>
@@ -69,7 +69,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                         <img src="{$path.images}new_arrivals_3.png" alt="New arrival">
                         <a href="/products">Casual</a>
                     </figure>
-                    <h4>Lorem ipsum dolor</h4>
+                    <h4>Lorem ipsum dolor.</h4>
                     <span>$ 300.00 MXN</span>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
                     <span>Blanco / CH - M - XL</span>
@@ -80,7 +80,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                         <img src="{$path.images}new_arrivals_4.png" alt="New arrival">
                         <a href="/products">Sensual</a>
                     </figure>
-                    <h4>Lorem ipsum dolor</h4>
+                    <h4>Lorem ipsum dolor.</h4>
                     <span>$ 450.00 MXN</span>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
                     <span>Negro / CH - M - XL</span>
@@ -129,7 +129,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                         <a href="/products">Deportivo</a>
                     </figure>
                     <div>
-                        <h4>Lorem ipsum dolor</h4>
+                        <h4>Lorem ipsum dolor.</h4>
                         <span>$ 500.00 MXN</span>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
                         <span>Negro / CH - M - XL</span>
@@ -142,7 +142,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                         <a href="/products">Moda</a>
                     </figure>
                     <div>
-                        <h4>Lorem ipsum dolor</h4>
+                        <h4>Lorem ipsum dolor.</h4>
                         <span>$ 600.00 MXN</span>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
                         <span>Lila / CH - M - XL</span>
@@ -155,7 +155,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                         <a href="/products">Casual</a>
                     </figure>
                     <div>
-                        <h4>Lorem ipsum dolor</h4>
+                        <h4>Lorem ipsum dolor.</h4>
                         <span>$ 400.00 MXN</span>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
                         <span>Azul / CH - M - XL</span>
@@ -170,7 +170,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                         <a href="/products">Deportivo</a>
                     </figure>
                     <div>
-                        <h4>Lorem ipsum dolor</h4>
+                        <h4>Lorem ipsum dolor.</h4>
                         <span>$ 500.00 MXN</span>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
                         <span>Negro / CH - M - XL</span>
@@ -183,7 +183,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                         <a href="/products">Moda</a>
                     </figure>
                     <div>
-                        <h4>Lorem ipsum dolor</h4>
+                        <h4>Lorem ipsum dolor.</h4>
                         <span>$ 600.00 MXN</span>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
                         <span>Lila / CH - M - XL</span>
@@ -196,7 +196,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                         <a href="/products">Casual</a>
                     </figure>
                     <div>
-                        <h4>Lorem ipsum dolor</h4>
+                        <h4>Lorem ipsum dolor.</h4>
                         <span>$ 400.00 MXN</span>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
                         <span>Azul / CH - M - XL</span>

@@ -18,7 +18,7 @@ $this->dependencies->add(['js', '{$path.js}Cart/index.js?v=1.0']);
                     <img src="{$path.images}we_recommend_you_1.png" alt="Cart">
                 </figure>
                 <div>
-                    <h4>Lorem ipsum dolor</h4>
+                    <h4>Lorem ipsum dolor.</h4>
                     <span>{$lang.price}: $ 500.00 MXN - Total: $ 500.00 MXN</span>
                     <span>1 {$lang.piece} - Negro - CH</span>
                     <a data-action="remove">{$lang.remove_from_cart}</a>
@@ -29,7 +29,7 @@ $this->dependencies->add(['js', '{$path.js}Cart/index.js?v=1.0']);
                     <img src="{$path.images}we_recommend_you_2.png" alt="Cart">
                 </figure>
                 <div>
-                    <h4>Lorem ipsum dolor</h4>
+                    <h4>Lorem ipsum dolor.</h4>
                     <span>{$lang.price}: $ 600.00 MXN - Total: $ 600.00 MXN</span>
                     <span>1 {$lang.piece} - Lila - CH</span>
                     <a data-action="remove">{$lang.remove_from_cart}</a>
@@ -40,7 +40,7 @@ $this->dependencies->add(['js', '{$path.js}Cart/index.js?v=1.0']);
                     <img src="{$path.images}we_recommend_you_3.png" alt="Cart">
                 </figure>
                 <div>
-                    <h4>Lorem ipsum dolor</h4>
+                    <h4>Lorem ipsum dolor.</h4>
                     <span>{$lang.price}: $ 400.00 MXN - Total: $ 400.00 MXN</span>
                     <span>1 {$lang.piece} - Azul - CH</span>
                     <a data-action="remove">{$lang.remove_from_cart}</a>
