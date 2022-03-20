@@ -58,7 +58,7 @@ $this->dependencies->add(['js', '{$path.js}Cart/index.js?v=1.0']);
 <section class="modal fullscreen" data-modal="payment">
     <div class="content">
         <main>
-            <form name="payment" class="container">
+            <form name="payment">
                 <div class="row">
                     <div class="col-6">
                         <fieldset>
