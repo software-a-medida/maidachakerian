@@ -100,7 +100,8 @@ header.menu > nav:last-child > ul > li > a > img {
 /*  */
 
 main.products > section.home,
-main.cart > section.home {
+main.cart > section.home,
+main.contact > section.home {
     width: 100%;
     height: 50px;
     background-color: #000;
@@ -114,24 +115,38 @@ main.home > section.our_specialities,
 main.products > section.filters,
 main.products > section.products,
 main.cart > section.cart,
-main.cart > section.total {
+main.cart > section.total,
+main.contact > section.contact,
+main.contact > section.social_media {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     box-sizing: border-box;
 }
 
 main.home > section.new_arrivals,
 main.home > section.we_recommend_you,
 main.home > section.our_specialities,
-main.products > section.products {
+main.products > section.filters,
+main.products > section.products,
+main.cart > section.cart,
+main.cart > section.total,
+main.contact > section.contact {
+    flex-direction: column;
+}
+
+main.home > section.new_arrivals,
+main.home > section.we_recommend_you,
+main.home > section.our_specialities,
+main.products > section.products,
+main.contact > section.social_media {
     padding: 100px 50px;
 }
 
 main.products > section.filters,
-main.cart > section.cart  {
+main.cart > section.cart,
+main.contact > section.contact {
     padding: 100px 50px 0px 50px;
 }
 
@@ -143,7 +158,8 @@ main.home > section.new_arrivals > h2,
 main.home > section.we_recommend_you > h2,
 main.home > section.our_specialities > h2,
 main.products > section.filters > h2,
-main.cart > section.cart > h2 {
+main.cart > section.cart > h2,
+main.contact > section.contact > h2 {
     margin-bottom: 20px;
     font-family: sans-serif;
     font-size: 80px;
@@ -157,7 +173,8 @@ main.home > section.new_arrivals > p,
 main.home > section.we_recommend_you > p,
 main.home > section.our_specialities > p,
 main.products > section.filters > p,
-main.cart > section.cart > p {
+main.cart > section.cart > p,
+main.contact > section.contact > p {
     max-width: 800px;
     margin-bottom: 50px;
     font-size: 18px;
@@ -280,6 +297,28 @@ main.products > section.filters > form > fieldset > button {
 
 main.products > section.filters > form > fieldset > button:hover {
     color: #fff !important;
+}
+
+main.contact > section.social_media > a {
+    width: calc(800px / 5);
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+main.contact > section.social_media > a > i {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+main.contact > section.social_media > a > span {
+    font-size: 14px;
+    color: #000;
 }
 
 /*  */
@@ -567,7 +606,8 @@ section[data-modal="details"].modal > div > main > form[name="details"] > div:la
     margin-bottom: 0px;
 }
 
-section[data-modal="payment"].modal > div > main > form[name="payment"] > div {
+section[data-modal="payment"].modal > div > main > form[name="payment"] > div,
+main.contact > section.contact > form[name="contact"] > div {
     width: 800px;
 }
 
@@ -620,7 +660,8 @@ section[data-modal="details"].modal > div > main > form[name="details"] > div > 
     margin-right: 15px;
 }
 
-section[data-modal="payment"].modal > div > main > form[name="payment"] > div > div > fieldset {
+section[data-modal="payment"].modal > div > main > form[name="payment"] > div > div > fieldset,
+main.contact > section.contact > form[name="contact"] > div > div > fieldset {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -628,8 +669,14 @@ section[data-modal="payment"].modal > div > main > form[name="payment"] > div > 
     margin-bottom: 20px;
 }
 
+section[data-modal="payment"].modal > div > main > form[name="payment"] > div > div:last-child > fieldset,
+main.contact > section.contact > form[name="contact"] > div > div:last-child > fieldset {
+    margin-bottom: 0px;
+}
+
 section[data-modal="details"].modal > div > main > form[name="details"] > div > fieldset > h4,
-section[data-modal="payment"].modal > div > main > form[name="payment"] > div > div > fieldset > h4 {
+section[data-modal="payment"].modal > div > main > form[name="payment"] > div > div > fieldset > h4,
+main.contact > section.contact > form[name="contact"] > div > div > fieldset > h4 {
     width: 100%;
     margin-bottom: 5px;
     font-weight: 600;
@@ -640,14 +687,16 @@ section[data-modal="details"].modal > div > main > form[name="details"] > div > 
     font-size: 24px;
 }
 
-section[data-modal="payment"].modal > div > main > form[name="payment"] > div > div > fieldset > h4 {
+section[data-modal="payment"].modal > div > main > form[name="payment"] > div > div > fieldset > h4,
+main.contact > section.contact > form[name="contact"] > div > div > fieldset > h4 {
     font-size: 18px;
 }
 
 section[data-modal="details"].modal > div > main > form[name="details"] > div > fieldset > select,
 section[data-modal="payment"].modal > div > main > form[name="payment"] > div > div > fieldset > select,
 section[data-modal="details"].modal > div > main > form[name="details"] > div > fieldset > input,
-section[data-modal="payment"].modal > div > main > form[name="payment"] > div > div > fieldset > input {
+section[data-modal="payment"].modal > div > main > form[name="payment"] > div > div > fieldset > input,
+main.contact > section.contact > form[name="contact"] > div > div > fieldset > input {
     height: 50px;
     padding: 0px 15px;
     box-sizing: border-box;
@@ -662,7 +711,8 @@ section[data-modal="details"].modal > div > main > form[name="details"] > div > 
 }
 
 section[data-modal="payment"].modal > div > main > form[name="payment"] > div > div > fieldset > select,
-section[data-modal="payment"].modal > div > main > form[name="payment"] > div > div > fieldset > input {
+section[data-modal="payment"].modal > div > main > form[name="payment"] > div > div > fieldset > input,
+main.contact > section.contact > form[name="contact"] > div > div > fieldset > input {
     width: 100%;
 }
 
@@ -691,23 +741,29 @@ section[data-modal="details"].modal > div > main > form[name="details"] > div > 
     margin-right: 10px;
 }
 
-section[data-modal="payment"].modal > div > main > form[name="payment"] > div > div > fieldset > a {
+section[data-modal="payment"].modal > div > main > form[name="payment"] > div > div > fieldset > a,
+main.contact > section.contact > form[name="contact"] > div > div > fieldset > button {
     width: 100%;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 5px;
+    border: 0px;
     border-radius: 5px;
     color: #fff;
     background-color: #000;
+}
+
+section[data-modal="payment"].modal > div > main > form[name="payment"] > div > div > fieldset > a {
+    margin-bottom: 5px;
 }
 
 section[data-modal="payment"].modal > div > main > form[name="payment"] > div > div > fieldset > a:last-child {
     margin-bottom: 0px;
 }
 
-section[data-modal="payment"].modal > div > main > form[name="payment"] > div > div > fieldset > a:hover {
+section[data-modal="payment"].modal > div > main > form[name="payment"] > div > div > fieldset > a:hover,
+main.contact > section.contact > form[name="contact"] > div > div > fieldset > button:hover {
     color: #fff !important;
 }
 
