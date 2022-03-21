@@ -101,7 +101,8 @@ header.menu > nav:last-child > ul > li > a > img {
 
 main.products > section.home,
 main.cart > section.home,
-main.contact > section.home {
+main.contact > section.home,
+main.about > section.home {
     width: 100%;
     height: 50px;
     background-color: #000;
@@ -117,7 +118,8 @@ main.products > section.products,
 main.cart > section.cart,
 main.cart > section.total,
 main.contact > section.contact,
-main.contact > section.social_media {
+main.contact > section.social_media,
+main.about > section.about {
     width: 100%;
     display: flex;
     align-items: center;
@@ -132,7 +134,8 @@ main.products > section.filters,
 main.products > section.products,
 main.cart > section.cart,
 main.cart > section.total,
-main.contact > section.contact {
+main.contact > section.contact,
+main.about > section.about {
     flex-direction: column;
 }
 
@@ -140,7 +143,8 @@ main.home > section.new_arrivals,
 main.home > section.we_recommend_you,
 main.home > section.our_specialities,
 main.products > section.products,
-main.contact > section.social_media {
+main.contact > section.social_media,
+main.about > section.about {
     padding: 100px 50px;
 }
 
@@ -159,7 +163,8 @@ main.home > section.we_recommend_you > h2,
 main.home > section.our_specialities > h2,
 main.products > section.filters > h2,
 main.cart > section.cart > h2,
-main.contact > section.contact > h2 {
+main.contact > section.contact > h2,
+main.about > section.about > h2 {
     margin-bottom: 20px;
     font-family: sans-serif;
     font-size: 80px;
@@ -174,7 +179,8 @@ main.home > section.we_recommend_you > p,
 main.home > section.our_specialities > p,
 main.products > section.filters > p,
 main.cart > section.cart > p,
-main.contact > section.contact > p {
+main.contact > section.contact > p,
+main.about > section.about > p {
     max-width: 800px;
     margin-bottom: 50px;
     font-size: 18px;
@@ -319,6 +325,12 @@ main.contact > section.social_media > a > i {
 main.contact > section.social_media > a > span {
     font-size: 14px;
     color: #000;
+}
+
+main.about > section.about > figure,
+main.about > section.about > figure > img {
+    width: auto;
+    height: 200px;
 }
 
 /*  */

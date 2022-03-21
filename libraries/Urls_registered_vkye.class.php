@@ -24,6 +24,10 @@ class Urls_registered_vkye
             '/contact' => [
                 'controller' => 'Contact',
                 'method' => 'index'
+            ],
+            '/about' => [
+                'controller' => 'About',
+                'method' => 'index'
             ]
         ];
     }
