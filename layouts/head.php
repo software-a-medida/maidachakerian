@@ -32,7 +32,7 @@
 			<nav>
 				<ul>
 					<li><a href="/"><i class="fa-solid fa-house"></i></a></li>
-					<li><a href="/products"><i class="fa-solid fa-list-ul"></i>	</a></li>
+					<li><a href="/products"><i class="fa-solid fa-store"></i></a></li>
 					<li><a href="/cart"><i class="fas fa-cart-plus"></i>3 {$lang.products}</a></li>
 					<li><a href="/cart"><i class="fas fa-credit-card"></i>$ 1,500.00</a></li>
 					<li><a href="/cart"><i class="fas fa-dollar-sign"></i>MXN</a></li>
