@@ -50,7 +50,7 @@ $this->dependencies->add(['js', '{$path.js}Cart/index.js?v=1.0']);
     </section>
     <section class="total">
         <div class="container">
-            <h2>$ 1,500.00 MXN</h2>
+            <h2>$ 1,500.00 MXN.</h2>
             <a data-button-modal="payment">{$lang.pay_now}</a>
         </div>
     </section>
@@ -82,10 +82,9 @@ $this->dependencies->add(['js', '{$path.js}Cart/index.js?v=1.0']);
                         <fieldset>
                             <h4>{$lang.area}</h4>
                             <select name="area">
-                                <option value="">México, Quintana roo.</option>
-                                <option value="">México, Yucatán.</option>
-                                <option value="">México, Campeche.</option>
-                                <option value="">México, CDMX.</option>
+                                <?php foreach(Functions::api(['get_all_areas']) as $value) : ?>
+                                    <option value="<?php echo $value['id']; ?>"><?php echo $value['name']; ?> $ <?php echo $value['price']; ?> MXN</option>
+                                <?php endforeach; ?>
                             </select>
                         </fieldset>
                     </div>

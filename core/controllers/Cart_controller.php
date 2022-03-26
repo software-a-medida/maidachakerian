@@ -13,7 +13,7 @@ class Cart_controller extends Controller
 	{
 		$template = $this->view->render($this, 'index');
 
-		define('_title', Configuration::$web_page . ' | {$lang.cart}');
+		define('_title', Configuration::$web_page . ' {$lang.cart}');
 
 		echo $template;
 	}

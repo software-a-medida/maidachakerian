@@ -41,25 +41,21 @@ $this->dependencies->add(['js', '{$path.js}Contact/index.js?v=1.0']);
         </form>
     </section>
     <section class="social_media">
-        <a href="tel:+521234567890" target="_blank">
-            <i class="fas fa-phone"></i>
-            <span>+52 (123) 456 78 90</span>
-        </a>
-        <a href="https://api.whatsapp.com/send?phone=+520123456789" target="_blank">
-            <i class="fab fa-whatsapp"></i>
-            <span>+52 (123) 456 78 90</span>
-        </a>
-        <a href="https://facebook.com/" target="_blank">
-            <i class="fab fa-facebook-messenger"></i>
-            <span>@maidachakerian</span>
-        </a>
-        <a href="https://facebook.com/" target="_blank">
+        <a href="https://facebook.com/<?php echo Configuration::$contact_facebook; ?>" target="_blank">
             <i class="fab fa-facebook"></i>
-            <span>@maidachakerian</span>
+            <span>@<?php echo Configuration::$contact_facebook; ?></span>
         </a>
-        <a href="https://instagram.com/" target="_blank">
+        <a href="https://instagram.com/<?php echo Configuration::$contact_instagram; ?>" target="_blank">
             <i class="fab fa-instagram"></i>
-            <span>@maidachakerian</span>
+            <span>@<?php echo Configuration::$contact_instagram; ?></span>
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=<?php echo Configuration::$contact_whatsapp; ?>" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <span><?php echo Configuration::$contact_whatsapp; ?></span>
+        </a>
+        <a href="tel:<?php echo Configuration::$contact_phone; ?>" target="_blank" data-mobile-flex>
+            <i class="fas fa-phone"></i>
+            <span><?php echo Configuration::$contact_phone; ?></span>
         </a>
     </section>
 </main>

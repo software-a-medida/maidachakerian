@@ -13,7 +13,7 @@ class Contact_controller extends Controller
 	{
 		$template = $this->view->render($this, 'index');
 
-		define('_title', Configuration::$web_page . ' | {$lang.contact}');
+		define('_title', Configuration::$web_page . ' {$lang.contact}');
 
 		echo $template;
 	}

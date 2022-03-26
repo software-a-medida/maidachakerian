@@ -22,6 +22,22 @@ button:hover {
     color: inherit !important;
 }
 
+[data-mobile-block],
+[data-mobile-flex] {
+    display: none !important;
+}
+
+@media (max-width: 425px) {
+
+    [data-mobile-block] {
+        display: block !important;
+    }
+
+    [data-mobile-flex] {
+        display: flex !important;
+    }
+}
+
 /*  */
 
 header.menu {
@@ -283,13 +299,20 @@ main.products > section.filters > form > fieldset > h2 {
 
 main.products > section.filters > form > fieldset > select,
 main.products > section.filters > form > fieldset > div > input {
-    width: 200px;
     height: 50px;
     padding: 0px 15px;
     box-sizing: border-box;
     border: 0px;
     border-radius: 5px;
     background-color: #eee;
+}
+
+main.products > section.filters > form > fieldset > select {
+    width: 300px;
+}
+
+main.products > section.filters > form > fieldset > div > input {
+    width: 200px;
 }
 
 main.products > section.filters > form > fieldset > button {
@@ -306,7 +329,7 @@ main.products > section.filters > form > fieldset > button:hover {
 }
 
 main.contact > section.social_media > a {
-    width: calc(800px / 5);
+    width: calc(800px / 4);
     height: auto;
     display: flex;
     align-items: center;
@@ -375,7 +398,7 @@ main.cart > section.cart > div > article::after {
     clear: both;
 }
 
-main.home > section.new_arrivals > div > div > article:first-child,
+/* main.home > section.new_arrivals > div > div > article:first-child,
 main.home > section.we_recommend_you > div > div > article:first-child,
 main.home > section.our_specialities > div > div > article:first-child,
 main.products > section.products > div > div > article:first-child {
@@ -387,7 +410,7 @@ main.home > section.we_recommend_you > div > div > article:last-child,
 main.home > section.our_specialities > div > div > article:last-child,
 main.products > section.products > div > div > article:last-child {
     padding-right: 0px;
-}
+} */
 
 main.cart > section.cart > div > article:last-child {
     margin-bottom: 0px;

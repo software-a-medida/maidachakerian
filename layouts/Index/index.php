@@ -33,8 +33,8 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
             <div class="item" style="background-image: url('{$path.images}home_16.png')"></div>
         </div>
         <div class="logotype">
-            <h1>Maida Chakerian.</h1>
-            <h3>Beach, Clothes & Fashion.</h3>
+            <h1><?php echo Configuration::$web_page; ?></h1>
+            <h3><?php echo Configuration::$web_description; ?></h3>
         </div>
     </section>
     <section class="new_arrivals">
@@ -42,174 +42,66 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
         <p>{$lang.new_arrivals_2}</p>
         <div>
             <div>
-                <article>
-                    <figure>
-                        <img src="{$path.images}new_arrivals_1.png" alt="New arrival">
-                        <a href="/products">Deportivo.</a>
-                    </figure>
-                    <h4>Lorem ipsum dolor.</h4>
-                    <span>$ 400.00 MXN</span>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                    <span>Azul / CH - M - XL</span>
-                    <a data-button-modal="details"><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
-                </article>
-                <article>
-                    <figure>
-                        <img src="{$path.images}new_arrivals_2.png" alt="New arrival">
-                        <a href="/products">Moda.</a>
-                    </figure>
-                    <h4>Lorem ipsum dolor.</h4>
-                    <span>$ 850.00 MXN</span>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                    <span>Negro / CH - M - XL</span>
-                    <a data-button-modal="details"><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
-                </article>
-                <article>
-                    <figure>
-                        <img src="{$path.images}new_arrivals_3.png" alt="New arrival">
-                        <a href="/products">Casual.</a>
-                    </figure>
-                    <h4>Lorem ipsum dolor.</h4>
-                    <span>$ 300.00 MXN</span>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                    <span>Blanco / CH - M - XL</span>
-                    <a data-button-modal="details"><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
-                </article>
-                <article>
-                    <figure>
-                        <img src="{$path.images}new_arrivals_4.png" alt="New arrival">
-                        <a href="/products">Sensual.</a>
-                    </figure>
-                    <h4>Lorem ipsum dolor.</h4>
-                    <span>$ 450.00 MXN</span>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                    <span>Negro / CH - M - XL</span>
-                    <a data-button-modal="details"><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
-                </article>
+                <?php $counter = 0; ?>
+                <?php foreach(Functions::api(['get_new_arrivals_products']) as $value) : ?>
+                    <?php $counter = $counter + 1; ?>
+                    <article style="<?php echo (($counter > 4) ? 'margin-top:50px;' : ''); ?>">
+                        <figure>
+                            <img src="{$path.uploads}<?php echo $value['avatar']; ?>" alt="New arrival">
+                            <a href="/products"><?php echo Functions::categories([$value['categories'], '2', 'one']); ?></a>
+                        </figure>
+                        <h4><?php echo $value['name']; ?></h4>
+                        <span>$ <?php echo $value['price']; ?> MXN</span>
+                        <p><?php echo Functions::description([$value['description'], 100]); ?></p>
+                        <span><?php echo Functions::categories([$value['categories'], '5', 'resume', '{$lang.colors}']); ?> / <?php echo Functions::categories([$value['categories'], '4', 'all']); ?></span>
+                        <a data-button-modal="details" data-id="<?php echo $value['id']; ?>"><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
+                    </article>
+                <?php endforeach; ?>
             </div>
         </div>
     </section>
     <section class="categories">
-        <article>
-            <figure>
-                <img src="{$path.images}categories_1.png" alt="Category">
-            </figure>
-            <div>
-                <h4>Dama.</h4>
-                <a href="/products">{$lang.view_all}</a>
-            </div>
-        </article>
-        <article>
-            <figure>
-                <img src="{$path.images}categories_2.png" alt="Category">
-            </figure>
-            <div>
-                <h4>Juvenil.</h4>
-                <a href="/products">{$lang.view_all}</a>
-            </div>
-        </article>
-        <article>
-            <figure>
-                <img src="{$path.images}categories_3.png" alt="Category">
-            </figure>
-            <div>
-                <h4>Niña.</h4>
-                <a href="/products">{$lang.view_all}</a>
-            </div>
-        </article>
+        <?php foreach(Functions::api(['get_main_1_categories']) as $value) : ?>
+            <article>
+                <figure>
+                    <img src="{$path.uploads}<?php echo $value['avatar']; ?>" alt="Category">
+                </figure>
+                <div>
+                    <h4><?php echo $value['name']; ?></h4>
+                    <a href="/products">{$lang.view_all}</a>
+                </div>
+            </article>
+        <?php endforeach; ?>
     </section>
     <section class="we_recommend_you">
         <h2>{$lang.we_recommend_you_1}</h2>
         <p>{$lang.we_recommend_you_2}</p>
         <div>
             <div>
-                <article>
-                    <figure>
-                        <img src="{$path.images}we_recommend_you_1.png" alt="We recommend you">
-                        <a href="/products">Deportivo.</a>
-                    </figure>
-                    <div>
-                        <h4>Lorem ipsum dolor.</h4>
-                        <span>$ 500.00 MXN</span>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                        <span>Negro / CH - M - XL</span>
-                        <a data-button-modal="details"><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
-                    </div>
-                </article>
-                <article>
-                    <figure>
-                        <img src="{$path.images}we_recommend_you_2.png" alt="We recommend you">
-                        <a href="/products">Moda.</a>
-                    </figure>
-                    <div>
-                        <h4>Lorem ipsum dolor.</h4>
-                        <span>$ 600.00 MXN</span>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                        <span>Lila / CH - M - XL</span>
-                        <a data-button-modal="details"><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
-                    </div>
-                </article>
-                <article>
-                    <figure>
-                        <img src="{$path.images}we_recommend_you_3.png" alt="We recommend you">
-                        <a href="/products">Casual.</a>
-                    </figure>
-                    <div>
-                        <h4>Lorem ipsum dolor.</h4>
-                        <span>$ 400.00 MXN</span>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                        <span>Azul / CH - M - XL</span>
-                        <a data-button-modal="details"><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
-                    </div>
-                </article>
-            </div>
-            <div>
-                <article>
-                    <figure>
-                        <img src="{$path.images}we_recommend_you_1.png" alt="We recommend you">
-                        <a href="/products">Deportivo.</a>
-                    </figure>
-                    <div>
-                        <h4>Lorem ipsum dolor.</h4>
-                        <span>$ 500.00 MXN</span>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                        <span>Negro / CH - M - XL</span>
-                        <a data-button-modal="details"><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
-                    </div>
-                </article>
-                <article>
-                    <figure>
-                        <img src="{$path.images}we_recommend_you_2.png" alt="We recommend you">
-                        <a href="/products">Moda.</a>
-                    </figure>
-                    <div>
-                        <h4>Lorem ipsum dolor.</h4>
-                        <span>$ 600.00 MXN</span>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                        <span>Lila / CH - M - XL</span>
-                        <a data-button-modal="details"><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
-                    </div>
-                </article>
-                <article>
-                    <figure>
-                        <img src="{$path.images}we_recommend_you_3.png" alt="We recommend you">
-                        <a href="/products">Casual.</a>
-                    </figure>
-                    <div>
-                        <h4>Lorem ipsum dolor.</h4>
-                        <span>$ 400.00 MXN</span>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                        <span>Azul / CH - M - XL</span>
-                        <a data-button-modal="details"><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
-                    </div>
-                </article>
+                <?php $counter = 0; ?>
+                <?php foreach(Functions::api(['get_we_recommend_you_products']) as $value) : ?>
+                    <?php $counter = $counter + 1; ?>
+                    <article style="<?php echo (($counter > 3) ? 'margin-top:50px;' : ''); ?>">
+                        <figure>
+                            <img src="{$path.uploads}<?php echo $value['avatar']; ?>" alt="We recommend you">
+                            <a href="/products"><?php echo Functions::categories([$value['categories'], '2', 'resume', '{$lang.categories}']); ?></a>
+                        </figure>
+                        <div>
+                            <h4><?php echo $value['name']; ?></h4>
+                            <span>$ <?php echo $value['price']; ?> MXN</span>
+                            <p><?php echo Functions::description([$value['description'], 100]); ?></p>
+                            <span><?php echo Functions::categories([$value['categories'], '5', 'resume', '{$lang.colors}']); ?> / <?php echo Functions::categories([$value['categories'], '4', 'all']); ?></span>
+                            <a data-button-modal="details" data-id="<?php echo $value['id']; ?>"><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
+                        </div>
+                    </article>
+                <?php endforeach; ?>
             </div>
         </div>
     </section>
     <section class="view_all_shop">
         <div>
             <h3>{$lang.view_all_shop_1}</h3>
-            <h2>Maida Chakerian.</h2>
+            <h2><?php echo Configuration::$web_page; ?></h2>
             <p>{$lang.view_all_shop_2}</p>
             <a href="/products">{$lang.view_all_shop}</a>
         </div>
@@ -252,9 +144,9 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
         </figure>
         <div>
             <div>
-                <span><i class="fas fa-phone"></i>+52 (012) 345 67 89</span>
-                <span><i class="fas fa-envelope"></i>vantas@maidachakerian.com</span>
-                <span><i class="fas fa-map-marker-alt"></i>Cancún, Quintana roo.</span>
+                <span><i class="fas fa-phone"></i><?php echo Configuration::$contact_phone; ?></span>
+                <span><i class="fas fa-envelope"></i><?php echo Configuration::$contact_email; ?></span>
+                <span><i class="fas fa-map-marker-alt"></i><?php echo Configuration::$contact_location; ?></span>
                 <a href="/contact">{$lang.contact_us}</a>
             </div>
         </div>
@@ -265,7 +157,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
         </figure>
         <div>
             <h3>{$lang.about_us_1}</h3>
-            <h2>Maida Chakerian.</h2>
+            <h2><?php echo Configuration::$web_page; ?></h2>
             <p>{$lang.about_us_2}</p>
             <a href="/about">{$lang.know_more}</a>
         </div>

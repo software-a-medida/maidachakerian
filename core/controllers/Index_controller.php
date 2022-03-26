@@ -13,7 +13,7 @@ class Index_controller extends Controller
 	{
 		$template = $this->view->render($this, 'index');
 
-		define('_title', Configuration::$web_page . ' | {$lang.home}');
+		define('_title', Configuration::$web_page . ' {$lang.home}');
 
 		echo $template;
 	}

@@ -13,7 +13,7 @@ class About_controller extends Controller
 	{
 		$template = $this->view->render($this, 'index');
 
-		define('_title', Configuration::$web_page . ' | {$lang.about}');
+		define('_title', Configuration::$web_page . ' {$lang.about}');
 
 		echo $template;
 	}

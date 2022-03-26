@@ -26,8 +26,54 @@ class Configuration
 	 * @static
 	 *
      * @var string $web_page
+     * @var string $web_description
      */
-	public static $web_page = 'Maida Chakerian';
+	public static $web_page = 'Maida Chakerian.';
+	public static $web_description = 'Beach, Clothes & Fashion.';
+
+	/**
+     * Lista de ID's de conexión con Foxior.
+	 *
+	 * @static
+	 *
+     * @var string $foxior_id_connection
+     * @var string $foxior_id_account
+     * @var string $foxior_id_new_arrivals_products_category
+     * @var string $foxior_id_we_recommend_you_products_category
+     * @var string $foxior_id_main_1_categories_level
+     * @var string $foxior_id_main_2_categories_level
+     * @var string $foxior_id_main_3_categories_level
+     * @var string $foxior_id_size_categories_level
+     * @var string $foxior_id_color_categories_level
+     */
+	public static $foxior_id_connection = 'http://foxior-api';
+	public static $foxior_id_account = '10';
+	public static $foxior_id_new_arrivals_products_category = '39';
+	public static $foxior_id_we_recommend_you_products_category = '40';
+	public static $foxior_id_main_1_categories_level = '1';
+	public static $foxior_id_main_2_categories_level = '2';
+	public static $foxior_id_main_3_categories_level = '3';
+	public static $foxior_id_size_categories_level = '4';
+	public static $foxior_id_color_categories_level = '5';
+
+	/**
+     * Lista de información de contacto.
+	 *
+	 * @static
+	 *
+     * @var string $email
+     * @var string $phone
+     * @var string $facebook
+     * @var string $instagram
+     * @var string $whatsapp
+     * @var string $location
+     */
+	public static $contact_email = 'maidachakeriansw@gmail.com';
+	public static $contact_phone = '+52 (998) 897 86 57';
+	public static $contact_facebook = 'MCBrazilianSwimwear';
+	public static $contact_instagram = 'mc.brazilianswimwear';
+	public static $contact_whatsapp = '+52 (998) 897 86 57';
+	public static $contact_location = 'Cancún, Quintana roo.';
 
 	/**
      * Idioma por default
