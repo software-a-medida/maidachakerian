@@ -7,11 +7,11 @@ $(document).ready(function()
         autoplayTimeout: 2000,
         animateOut: 'fadeOut',
         animateIn: 'flipInX',
-        items:1,
-        loop:true,
-        margin:0,
-        nav:false,
-        dots:false
+        items: 1,
+        loop: true,
+        margin: 0,
+        nav: false,
+        dots: false
     });
 
     $('#home_right').owlCarousel({
@@ -19,10 +19,10 @@ $(document).ready(function()
         autoplayTimeout: 3000,
         animateOut: 'fadeOut',
         animateIn: 'flipInX',
-        items:1,
-        loop:true,
-        margin:0,
-        nav:false,
-        dots:false
+        items: 1,
+        loop: true,
+        margin: 0,
+        nav: false,
+        dots: false
     });
 });

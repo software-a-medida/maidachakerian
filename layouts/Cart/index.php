@@ -13,44 +13,30 @@ $this->dependencies->add(['js', '{$path.js}Cart/index.js?v=1.0']);
         <h2>{$lang.cart_1}</h2>
         <p>{$lang.cart_2}</p>
         <div class="container">
-            <article>
-                <figure>
-                    <img src="{$path.images}we_recommend_you_1.png" alt="Cart">
-                </figure>
+            <?php if (!empty(Session::get_value('cart'))) : ?>
+                <?php foreach(Session::get_value('cart')['products'] as $value) : ?>
+                    <article>
+                        <figure>
+                            <img src="{$path.uploads}<?php echo $value['details']['avatar']; ?>" alt="Cart">
+                        </figure>
+                        <div>
+                            <h4><?php echo $value['details']['name']; ?></h4>
+                            <span>{$lang.price}: $ <?php echo $value['details']['price']; ?> MXN - Total: $ <?php echo $value['total']; ?> MXN</span>
+                            <span><?php echo $value['amount'] . ' ' . $value['details']['unity']['es']; ?> - <?php echo $value['color']['name']; ?> - <?php echo $value['size']['name']; ?></span>
+                            <a data-action="remove" data-id="<?php echo $value['details']['id']; ?>">{$lang.remove_from_cart}</a>
+                        </div>
+                    </article>
+                <?php endforeach; ?>
+            <?php else : ?>
                 <div>
-                    <h4>Lorem ipsum dolor.</h4>
-                    <span>{$lang.price}: $ 500.00 MXN - Total: $ 500.00 MXN</span>
-                    <span>1 {$lang.piece} - Negro - CH</span>
-                    <a data-action="remove">{$lang.remove_from_cart}</a>
+                    <p>{$lang.empty_shopping_cart}</p>
                 </div>
-            </article>
-            <article>
-                <figure>
-                    <img src="{$path.images}we_recommend_you_2.png" alt="Cart">
-                </figure>
-                <div>
-                    <h4>Lorem ipsum dolor.</h4>
-                    <span>{$lang.price}: $ 600.00 MXN - Total: $ 600.00 MXN</span>
-                    <span>1 {$lang.piece} - Lila - CH</span>
-                    <a data-action="remove">{$lang.remove_from_cart}</a>
-                </div>
-            </article>
-            <article>
-                <figure>
-                    <img src="{$path.images}we_recommend_you_3.png" alt="Cart">
-                </figure>
-                <div>
-                    <h4>Lorem ipsum dolor.</h4>
-                    <span>{$lang.price}: $ 400.00 MXN - Total: $ 400.00 MXN</span>
-                    <span>1 {$lang.piece} - Azul - CH</span>
-                    <a data-action="remove">{$lang.remove_from_cart}</a>
-                </div>
-            </article>
+            <?php endif; ?>
         </div>
     </section>
     <section class="total">
         <div class="container">
-            <h2>$ 1,500.00 MXN.</h2>
+            <h2>$ <?php echo (!empty(Session::get_value('cart')) ? Session::get_value('cart')['total'] : '0'); ?> MXN.</h2>
             <a data-button-modal="payment">{$lang.pay_now}</a>
         </div>
     </section>
@@ -72,13 +58,13 @@ $this->dependencies->add(['js', '{$path.js}Cart/index.js?v=1.0']);
                             <input type="text" name="lastname">
                         </fieldset>
                     </div>
-                    <div class="col-8">
+                    <div class="col-6">
                         <fieldset>
                             <h4>{$lang.address}</h4>
                             <input type="text" name="address">
                         </fieldset>
                     </div>
-                    <div class="col-4">
+                    <div class="col-6">
                         <fieldset>
                             <h4>{$lang.area}</h4>
                             <select name="area">
@@ -103,8 +89,6 @@ $this->dependencies->add(['js', '{$path.js}Cart/index.js?v=1.0']);
                     <div class="col-12">
                         <fieldset>
                             <a data-action="payment">{$lang.credit_debit_card}</a>
-                            <a data-action="payment">{$lang.transfer}</a>
-                            <a data-action="payment">{$lang.oxxo}</a>
                             <a button-close>{$lang.cancel}</a>
                         </fieldset>
                     </div>

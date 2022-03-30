@@ -47,9 +47,9 @@ class Configuration
      * @var string $foxior_id_color_categories_level
      */
 	public static $foxior_id_connection = 'http://foxior-api';
-	public static $foxior_id_account = '10';
-	public static $foxior_id_new_arrivals_products_category = '39';
-	public static $foxior_id_we_recommend_you_products_category = '40';
+	public static $foxior_id_account = '11';
+	public static $foxior_id_new_arrivals_products_category = '48';
+	public static $foxior_id_we_recommend_you_products_category = '49';
 	public static $foxior_id_main_1_categories_level = '1';
 	public static $foxior_id_main_2_categories_level = '2';
 	public static $foxior_id_main_3_categories_level = '3';
@@ -68,9 +68,9 @@ class Configuration
      * @var string $whatsapp
      * @var string $location
      */
-	public static $contact_email = 'maidachakeriansw@gmail.com';
+	public static $contact_email = 'ventas@maidachakerian.com';
 	public static $contact_phone = '+52 (998) 897 86 57';
-	public static $contact_facebook = 'MCBrazilianSwimwear';
+	public static $contact_facebook = 'MC Brazilian Swimwear';
 	public static $contact_instagram = 'mc.brazilianswimwear';
 	public static $contact_whatsapp = '+52 (998) 897 86 57';
 	public static $contact_location = 'Cancún, Quintana roo.';

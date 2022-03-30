@@ -2,11 +2,11 @@
 
 defined('_EXEC') or die;
 
+$this->dependencies->add(['css', '{$path.css}Index/index.css?v=1.0']);
+$this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
 $this->dependencies->add(['css', '{$path.plugins}owl_carousel/assets/owl.carousel.min.css']);
 $this->dependencies->add(['css', '{$path.plugins}owl_carousel/assets/owl.theme.default.min.css']);
 $this->dependencies->add(['js', '{$path.plugins}owl_carousel/owl.carousel.min.js']);
-$this->dependencies->add(['css', '{$path.css}Index/index.css?v=1.0']);
-$this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
 
 ?>
 
@@ -48,19 +48,19 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                     <article style="<?php echo (($counter > 4) ? 'margin-top:50px;' : ''); ?>">
                         <figure>
                             <img src="{$path.uploads}<?php echo $value['avatar']; ?>" alt="New arrival">
-                            <a href="/products"><?php echo Functions::categories([$value['categories'], '2', 'one']); ?></a>
+                            <a href="/products"><?php echo Functions::array_to_hash_string([$value['categories'], '2', 'one', 'string']); ?></a>
                         </figure>
                         <h4><?php echo $value['name']; ?></h4>
                         <span>$ <?php echo $value['price']; ?> MXN</span>
-                        <p><?php echo Functions::description([$value['description'], 100]); ?></p>
-                        <span><?php echo Functions::categories([$value['categories'], '5', 'resume', '{$lang.colors}']); ?> / <?php echo Functions::categories([$value['categories'], '4', 'all']); ?></span>
+                        <p><?php echo Functions::string_to_short([$value['description'], 100]); ?></p>
+                        <span><?php echo Functions::array_to_hash_string([$value['categories'], '5', 'resumed', 'string', '{$lang.colors}']) . ' ' . Functions::array_to_hash_string([$value['categories'], '4', 'all', 'string']); ?></span>
                         <a data-button-modal="details" data-id="<?php echo $value['id']; ?>"><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
                     </article>
                 <?php endforeach; ?>
             </div>
         </div>
     </section>
-    <section class="categories">
+    <!-- <section class="categories">
         <?php foreach(Functions::api(['get_main_1_categories']) as $value) : ?>
             <article>
                 <figure>
@@ -72,7 +72,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                 </div>
             </article>
         <?php endforeach; ?>
-    </section>
+    </section> -->
     <section class="we_recommend_you">
         <h2>{$lang.we_recommend_you_1}</h2>
         <p>{$lang.we_recommend_you_2}</p>
@@ -84,13 +84,13 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
                     <article style="<?php echo (($counter > 3) ? 'margin-top:50px;' : ''); ?>">
                         <figure>
                             <img src="{$path.uploads}<?php echo $value['avatar']; ?>" alt="We recommend you">
-                            <a href="/products"><?php echo Functions::categories([$value['categories'], '2', 'resume', '{$lang.categories}']); ?></a>
+                            <a href="/products"><?php echo Functions::array_to_hash_string([$value['categories'], '2', 'one', 'string']); ?></a>
                         </figure>
                         <div>
                             <h4><?php echo $value['name']; ?></h4>
                             <span>$ <?php echo $value['price']; ?> MXN</span>
-                            <p><?php echo Functions::description([$value['description'], 100]); ?></p>
-                            <span><?php echo Functions::categories([$value['categories'], '5', 'resume', '{$lang.colors}']); ?> / <?php echo Functions::categories([$value['categories'], '4', 'all']); ?></span>
+                            <p><?php echo Functions::string_to_short([$value['description'], 100]); ?></p>
+                            <span><?php echo Functions::array_to_hash_string([$value['categories'], '5', 'resumed', 'string', '{$lang.colors}']) . ' ' . Functions::array_to_hash_string([$value['categories'], '4', 'all', 'string']); ?></span>
                             <a data-button-modal="details" data-id="<?php echo $value['id']; ?>"><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
                         </div>
                     </article>

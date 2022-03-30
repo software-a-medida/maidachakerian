@@ -32,8 +32,8 @@
 				<ul>
 					<li><a href="/"><i class="fa-solid fa-house"></i> {$lang.home}</a></li>
 					<li><a href="/products"><i class="fa-solid fa-store"></i> {$lang.online_shop}</a></li>
-					<li><a href="/cart"><i class="fas fa-cart-plus"></i>3 {$lang.products}</a></li>
-					<li><a href="/cart"><i class="fas fa-credit-card"></i>$ 1,500.00 MXN</a></li>
+					<li><a href="/cart"><i class="fas fa-cart-plus"></i><?php echo (!empty(Session::get_value('cart')) ? Session::get_value('cart')['amount'] : '0'); ?> {$lang.products}</a></li>
+					<li><a href="/cart"><i class="fas fa-credit-card"></i>$ <?php echo (!empty(Session::get_value('cart')) ? Session::get_value('cart')['total'] : '0'); ?> MXN</a></li>
 					<li><a href="?lang=es"><img src="{$path.images}es.png" alt="ES"></a></li>
 					<li><a href="?lang=en"><img src="{$path.images}en.png" alt="EN"></a></li>
 				</ul>

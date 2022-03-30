@@ -5,46 +5,41 @@
                 <main>
                     <form name="details" class="container">
                         <div>
-                            <figure>
-                                <img src="{$path.images}home_1.png" alt="Gallery">
+                            <figure id="details_gallery_one">
+                                <img alt="Gallery">
                             </figure>
-                            <figure>
-                                <img src="{$path.images}home_2.png" alt="Gallery">
+                            <figure id="details_gallery_two">
+                                <img alt="Gallery">
                             </figure>
-                            <figure>
-                                <img src="{$path.images}home_3.png" alt="Gallery">
+                            <figure id="details_gallery_three">
+                                <img alt="Gallery">
                             </figure>
-                            <figure>
-                                <img src="{$path.images}we_recommend_you_1.png" alt="Gallery">
+                            <figure id="details_gallery_four">
+                                <img alt="Gallery">
                             </figure>
-                            <figure>
-                                <img src="{$path.images}we_recommend_you_2.png" alt="Gallery">
+                            <figure id="details_gallery_five">
+                                <img alt="Gallery">
                             </figure>
-                            <figure>
-                                <img src="{$path.images}we_recommend_you_3.png" alt="Gallery">
+                            <figure id="details_gallery_six">
+                                <img alt="Gallery">
                             </figure>
                         </div>
-                        <h2>Lorem ipsum dolor.</h2>
-                        <span>Moda / $ 500.00 MXN</span>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate.</p>
-                        <div>
-                            <fieldset>
-                                <h4>{$lang.size}</h4>
-                                <select name="size">
-                                    <option value="">CH</option>
-                                    <option value="">M</option>
-                                    <option value="">XL</option>
-                                </select>
-                            </fieldset>
+                        <h2 id="details_name"></h2>
+                        <span id="details_main_categories"></span>
+                        <span id="details_price"></span>
+                        <p id="details_description"></p>
+                        <div style="margin-top:40px;">
                             <fieldset>
                                 <h4>{$lang.color}</h4>
-                                <select name="color">
-                                    <option value="">Negro</option>
-                                </select>
+                                <select id="details_color_categories" name="color"></select>
                             </fieldset>
                             <fieldset>
-                                <h4>{$lang.amount}</h4>
-                                <input type="number" name="amount" value="1">
+                                <h4>{$lang.size}</h4>
+                                <select id="details_size_categories" name="size"></select>
+                            </fieldset>
+                            <fieldset>
+                                <h4>{$lang.amount} (<span id="details_unity"></span>)</h4>
+                                <input id="details_amount" type="number" name="amount" value="1">
                             </fieldset>
                         </div>
                         <div>
@@ -55,8 +50,11 @@
                 </main>
             </div>
         </section>
+        <section data-ajax-loader>
+            <div></div>
+        </section>
         <footer class="menu">
-            <p>Copyright <i class="fa-solid fa-copyright"></i> <?php echo Configuration::$web_page; ?> 2022. {$lang.all_right_reserved} <a href="https://codemonkey.com.mx" target="_blank">{$lang.development_by} codemonkey.com.mx.</a></p>
+            <p>Copyright <i class="fa-solid fa-copyright"></i> <?php echo Configuration::$web_page; ?> 2022. {$lang.all_right_reserved} {$lang.development_by} <a href="https://codemonkey.com.mx" target="_blank">codemonkey.com.mx.</a></p>
         </footer>
         <script src="{$path.js}jquery-3.4.1.min.js"></script>
         <script src="{$path.js}valkyrie.js?v=1.0"></script>
