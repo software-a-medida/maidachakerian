@@ -39,7 +39,7 @@ $(document).ready(function()
                     $('#details_gallery_six').find('img').attr('src', 'https://foxior.com/uploads/' + response.data.gallery.six);
                     $('#details_name').html(response.data.name);
                     $('#details_main_categories').html(response.data.categories.main);
-                    $('#details_price').html('$ ' + response.data.price + ' MXN');
+                    $('#details_price').html('$ ' + response.data.price + ' ' + response.data.currency);
                     $('#details_description').html(response.data.description);
                     $('#details_color_categories').html('');
                     $('#details_size_categories').html('');

@@ -34,6 +34,8 @@ class Functions
             $request .= '/products/get_categories_by_level/' . Configuration::$foxior_id_size_categories_level;
         else if ($params[0] == 'get_all_areas')
             $request .= '/onlineshop/get_all_areas';
+        else if ($params[0] == 'get_unique_account')
+            $request .= '/accounts/get_unique_account';
 
         curl_setopt($connection, CURLOPT_URL, Configuration::$foxior_id_connection . $request);
         curl_setopt($connection, CURLOPT_RETURNTRANSFER, true);

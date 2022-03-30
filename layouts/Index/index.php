@@ -51,7 +51,7 @@ $this->dependencies->add(['js', '{$path.plugins}owl_carousel/owl.carousel.min.js
                             <a href="/products"><?php echo Functions::array_to_hash_string([$value['categories'], '2', 'one', 'string']); ?></a>
                         </figure>
                         <h4><?php echo $value['name']; ?></h4>
-                        <span>$ <?php echo $value['price']; ?> MXN</span>
+                        <span>$ <?php echo $value['price'] . ' ' . $value['currency']; ?></span>
                         <p><?php echo Functions::string_to_short([$value['description'], 100]); ?></p>
                         <span><?php echo Functions::array_to_hash_string([$value['categories'], '5', 'resumed', 'string', '{$lang.colors}']) . ' ' . Functions::array_to_hash_string([$value['categories'], '4', 'all', 'string']); ?></span>
                         <a data-button-modal="details" data-id="<?php echo $value['id']; ?>"><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>
@@ -88,7 +88,7 @@ $this->dependencies->add(['js', '{$path.plugins}owl_carousel/owl.carousel.min.js
                         </figure>
                         <div>
                             <h4><?php echo $value['name']; ?></h4>
-                            <span>$ <?php echo $value['price']; ?> MXN</span>
+                            <span>$ <?php echo $value['price'] . ' ' . $value['currency']; ?></span>
                             <p><?php echo Functions::string_to_short([$value['description'], 100]); ?></p>
                             <span><?php echo Functions::array_to_hash_string([$value['categories'], '5', 'resumed', 'string', '{$lang.colors}']) . ' ' . Functions::array_to_hash_string([$value['categories'], '4', 'all', 'string']); ?></span>
                             <a data-button-modal="details" data-id="<?php echo $value['id']; ?>"><i class="fas fa-cart-plus"></i>{$lang.view_details}</a>

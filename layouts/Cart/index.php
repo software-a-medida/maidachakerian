@@ -21,7 +21,7 @@ $this->dependencies->add(['js', '{$path.js}Cart/index.js?v=1.0']);
                         </figure>
                         <div>
                             <h4><?php echo $value['details']['name']; ?></h4>
-                            <span>{$lang.price}: $ <?php echo $value['details']['price']; ?> MXN - Total: $ <?php echo $value['total']; ?> MXN</span>
+                            <span>{$lang.price}: $ <?php echo $value['details']['price'] . ' ' . $value['details']['currency']; ?> - Total: $ <?php echo $value['total'] . ' ' . $value['details']['currency']; ?></span>
                             <span><?php echo $value['amount'] . ' ' . $value['details']['unity']['es']; ?> - <?php echo $value['color']['name']; ?> - <?php echo $value['size']['name']; ?></span>
                             <a data-action="remove" data-id="<?php echo $value['details']['id']; ?>">{$lang.remove_from_cart}</a>
                         </div>
@@ -36,7 +36,7 @@ $this->dependencies->add(['js', '{$path.js}Cart/index.js?v=1.0']);
     </section>
     <section class="total">
         <div class="container">
-            <h2>$ <?php echo (!empty(Session::get_value('cart')) ? Session::get_value('cart')['total'] : '0'); ?> MXN.</h2>
+            <h2>$ <?php echo (!empty(Session::get_value('cart')) ? Session::get_value('cart')['total'] : '0') . ' ' . Functions::api(['get_unique_account'])['currency']; ?>.</h2>
             <a data-button-modal="payment">{$lang.pay_now}</a>
         </div>
     </section>
@@ -69,7 +69,7 @@ $this->dependencies->add(['js', '{$path.js}Cart/index.js?v=1.0']);
                             <h4>{$lang.area}</h4>
                             <select name="area">
                                 <?php foreach(Functions::api(['get_all_areas']) as $value) : ?>
-                                    <option value="<?php echo $value['id']; ?>"><?php echo $value['name']; ?> $ <?php echo $value['price']; ?> MXN</option>
+                                    <option value="<?php echo $value['id']; ?>"><?php echo $value['name']; ?> $ <?php echo $value['price'] . ' ' . $value['currency']; ?></option>
                                 <?php endforeach; ?>
                             </select>
                         </fieldset>
