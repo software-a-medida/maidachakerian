@@ -39,7 +39,8 @@ class Cart_controller extends Controller
 							$cart = [
 								'products' => [],
 								'amount' => 0,
-								'total' => 0
+								'total' => 0,
+								'currency' => Functions::api(['get_unique_account'])['currency']
 							];
 						}
 

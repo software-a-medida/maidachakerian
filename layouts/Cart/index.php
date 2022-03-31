@@ -36,7 +36,7 @@ $this->dependencies->add(['js', '{$path.js}Cart/index.js?v=1.0']);
     </section>
     <section class="total">
         <div class="container">
-            <h2>$ <?php echo (!empty(Session::get_value('cart')) ? Session::get_value('cart')['total'] : '0') . ' ' . Functions::api(['get_unique_account'])['currency']; ?>.</h2>
+            <h2>$ <?php echo (!empty(Session::get_value('cart')) ? Session::get_value('cart')['total'] . ' ' . Session::get_value('cart')['currency'] : '0 ' . Functions::api(['get_unique_account'])['currency']); ?>.</h2>
             <a data-button-modal="payment">{$lang.pay_now}</a>
         </div>
     </section>
