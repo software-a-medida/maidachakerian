@@ -68,7 +68,7 @@ class Configuration
      * @var string $whatsapp
      * @var string $location
      */
-	public static $contact_email = 'hi@maidachakerian.com';
+	public static $contact_email = 'hola@maidachakerian.com';
 	public static $contact_phone = '+52 (998) 897 86 57';
 	public static $contact_facebook = 'MC Brazilian Swimwear';
 	public static $contact_instagram = 'mc.brazilianswimwear';

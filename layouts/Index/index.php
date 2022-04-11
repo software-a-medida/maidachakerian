@@ -60,7 +60,7 @@ $this->dependencies->add(['js', '{$path.plugins}owl_carousel/owl.carousel.min.js
             </div>
         </div>
     </section>
-    <section class="categories">
+    <!-- <section class="categories">
         <?php foreach(Functions::api(['get_main_1_categories']) as $value) : ?>
             <article>
                 <figure>
@@ -72,7 +72,7 @@ $this->dependencies->add(['js', '{$path.plugins}owl_carousel/owl.carousel.min.js
                 </div>
             </article>
         <?php endforeach; ?>
-    </section>
+    </section> -->
     <section class="we_recommend_you">
         <h2>{$lang.we_recommend_you_1}</h2>
         <p>{$lang.we_recommend_you_2}</p>
@@ -109,7 +109,7 @@ $this->dependencies->add(['js', '{$path.plugins}owl_carousel/owl.carousel.min.js
             <img src="{$path.images}view_all_shop.png" alt="About us">
         </figure>
     </section>
-    <section class="our_specialities">
+    <!-- <section class="our_specialities">
         <h2>{$lang.our_specialities_1}</h2>
         <p>{$lang.our_specialities_2}</p>
         <div>
@@ -137,7 +137,7 @@ $this->dependencies->add(['js', '{$path.plugins}owl_carousel/owl.carousel.min.js
                 </article>
             </div>
         </div>
-    </section>
+    </section> -->
     <section class="about_us">
         <figure>
             <img src="{$path.images}about_us.png" alt="About us">
