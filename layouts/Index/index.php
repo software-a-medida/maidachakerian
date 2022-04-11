@@ -2,7 +2,7 @@
 
 defined('_EXEC') or die;
 
-$this->dependencies->add(['css', '{$path.css}Index/index.css?v=1.0']);
+$this->dependencies->add(['css', '{$path.css}Index/index.css?v=1.1']);
 $this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
 $this->dependencies->add(['css', '{$path.plugins}owl_carousel/assets/owl.carousel.min.css']);
 $this->dependencies->add(['css', '{$path.plugins}owl_carousel/assets/owl.theme.default.min.css']);

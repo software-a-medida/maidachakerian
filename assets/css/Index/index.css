@@ -25,7 +25,7 @@ main.home > section.home > #home_right {
     float: right;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
 
     main.home > section.home > #home_left {
         width: 100%;
@@ -61,7 +61,7 @@ main.home > section.home > div.logotype {
     z-index: 98;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
 
     main.home > section.home > div.logotype {
         justify-content: flex-end;
@@ -85,7 +85,7 @@ main.home > section.home > div.logotype > h3 {
     color: #fff;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
 
     main.home > section.home > div.logotype > h1 {
         font-size: 50px;
@@ -115,7 +115,7 @@ main.home > section.categories > article {
     position: relative;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
 
     main.home > section.categories > article {
         width: 100%;
@@ -190,7 +190,7 @@ main.home > section.contact_us {
     background-color: #000;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
 
     main.home > section.view_all_shop,
     main.home > section.about_us,
@@ -230,7 +230,7 @@ main.home > section.about_us > div {
     align-items: flex-end;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
 
     main.home > section.view_all_shop > div,
     main.home > section.about_us > div,
@@ -270,7 +270,7 @@ main.home > section.about_us > div > h3 {
     text-align: right;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
 
     main.home > section.view_all_shop > div > h3,
     main.home > section.about_us > div > h3,
@@ -294,7 +294,7 @@ main.home > section.about_us > div > p {
     text-align: right;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
 
     main.home > section.view_all_shop > div > p,
     main.home > section.about_us > div > p,
@@ -347,7 +347,7 @@ main.home > section.about_us > figure {
     float: left;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
 
     main.home > section.view_all_shop > figure,
     main.home > section.about_us > figure,
@@ -369,7 +369,7 @@ main.home > section.about_us > figure > img {
     height: 100%;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
 
     main.home > section.view_all_shop > figure > img,
     main.home > section.about_us > figure > img {

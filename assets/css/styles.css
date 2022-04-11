@@ -3,7 +3,7 @@
     height: 100%;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
 
     .container {
         padding: 0px !important;
@@ -125,7 +125,7 @@ header.menu::after {
     clear: both;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
 
     header.menu {
         display: none;
@@ -191,7 +191,7 @@ header.mobile {
     display: none;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
 
     header.mobile {
         width: 100%;
@@ -290,7 +290,7 @@ main.about > section.about {
     box-sizing: border-box;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
 
     main.contact > section.social_media {
         flex-direction: column;
@@ -318,7 +318,7 @@ main.about > section.about {
     padding: 100px 50px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
 
     main.home > section.new_arrivals,
     main.home > section.we_recommend_you,
@@ -336,7 +336,7 @@ main.contact > section.contact {
     padding: 100px 50px 0px 50px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
 
     main.products > section.filters,
     main.cart > section.cart,
@@ -349,7 +349,7 @@ main.cart > section.total {
     padding: 50px 50px 100px 50px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
 
     main.cart > section.total {
         padding: 20px;
@@ -386,7 +386,7 @@ main.about > section.about > p {
     color: #444;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
 
     main.home > section.new_arrivals > h2,
     main.home > section.we_recommend_you > h2,
@@ -426,7 +426,7 @@ main.cart > section.total > div {
     flex-direction: column;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
 
     main.cart > section.total > div {
         align-items: center;
@@ -491,7 +491,7 @@ main.products > section.filters > form {
     justify-content: center;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
 
     main.products > section.filters > form {
         flex-direction: column;
@@ -508,7 +508,7 @@ main.products > section.filters > form > fieldset {
     margin: 0px 15px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
 
     main.products > section.filters > form > fieldset {
         width: 100%;
@@ -551,7 +551,7 @@ main.products > section.filters > form > fieldset .chosen-container {
     background-color: #eee !important;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
 
     main.products > section.filters > form > fieldset > select,
     main.products > section.filters > form > fieldset .chosen-container {
@@ -591,7 +591,7 @@ main.contact > section.social_media > a {
     box-sizing: border-box;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
 
     main.contact > section.social_media > a {
         margin-bottom: 20px;
@@ -640,7 +640,7 @@ main.products > section.products > div > div > article {
     width: calc(100% / 3);
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
 
     main.home > section.new_arrivals > div > div > article,
     main.home > section.we_recommend_you > div > div > article,
@@ -711,7 +711,7 @@ main.cart > section.cart > div > article > figure {
     overflow: hidden;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
 
     main.home > section.we_recommend_you > div > div > article > figure,
     main.products > section.products > div > div > article > figure,
@@ -795,7 +795,7 @@ main.cart > section.cart > div > article > div {
     box-sizing: inherit;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
 
     main.home > section.we_recommend_you > div > div > article > div,
     main.products > section.products > div > div > article > div,
@@ -1111,7 +1111,7 @@ main.contact > section.contact > form[name="contact"] > div > div > fieldset > b
     color: #fff !important;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
 
     section.modal.fullscreen > div.content {
         height: auto !important;
@@ -1196,7 +1196,7 @@ footer.menu > p > a {
     color: rgba(255, 255, 255, 0.4);
 }
 
-@media (max-width: 425px)  {
+@media (max-width: 768px)  {
 
     footer.menu {
         height: auto;
