@@ -60,7 +60,7 @@ $this->dependencies->add(['js', '{$path.plugins}owl_carousel/owl.carousel.min.js
             </div>
         </div>
     </section>
-    <!-- <section class="categories">
+    <section class="categories">
         <?php foreach(Functions::api(['get_main_1_categories']) as $value) : ?>
             <article>
                 <figure>
@@ -72,7 +72,7 @@ $this->dependencies->add(['js', '{$path.plugins}owl_carousel/owl.carousel.min.js
                 </div>
             </article>
         <?php endforeach; ?>
-    </section> -->
+    </section>
     <section class="we_recommend_you">
         <h2>{$lang.we_recommend_you_1}</h2>
         <p>{$lang.we_recommend_you_2}</p>
@@ -138,19 +138,6 @@ $this->dependencies->add(['js', '{$path.plugins}owl_carousel/owl.carousel.min.js
             </div>
         </div>
     </section>
-    <section class="contact_us">
-        <figure>
-            <img src="{$path.images}contact_us.png" alt="Contact us">
-        </figure>
-        <div>
-            <div>
-                <span><i class="fas fa-phone"></i><?php echo Configuration::$contact_phone; ?></span>
-                <span><i class="fas fa-envelope"></i><?php echo Configuration::$contact_email; ?></span>
-                <span><i class="fas fa-map-marker-alt"></i><?php echo Configuration::$contact_location; ?></span>
-                <a href="/contact">{$lang.contact_us}</a>
-            </div>
-        </div>
-    </section>
     <section class="about_us">
         <figure>
             <img src="{$path.images}about_us.png" alt="About us">
@@ -160,6 +147,17 @@ $this->dependencies->add(['js', '{$path.plugins}owl_carousel/owl.carousel.min.js
             <h2><?php echo Configuration::$web_page; ?></h2>
             <p>{$lang.about_us_2}</p>
             <a href="/about">{$lang.know_more}</a>
+        </div>
+    </section>
+    <section class="contact_us">
+        <figure>
+            <img src="{$path.images}contact_us.png" alt="Contact us">
+        </figure>
+        <div>
+            <h3>{$lang.contact_us_1}</h3>
+            <h2><?php echo Configuration::$web_page; ?></h2>
+            <p>{$lang.contact_us_2}</p>
+            <a href="/contact">{$lang.contact_us}</a>
         </div>
     </section>
 </main>

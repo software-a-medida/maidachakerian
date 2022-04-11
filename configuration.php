@@ -29,7 +29,7 @@ class Configuration
      * @var string $web_description
      */
 	public static $web_page = 'Maida Chakerian.';
-	public static $web_description = 'Beach, Clothes & Fashion.';
+	public static $web_description = 'Beach, Bikinis & Fashion.';
 
 	/**
      * Lista de ID's de conexión con Foxior.
@@ -68,7 +68,7 @@ class Configuration
      * @var string $whatsapp
      * @var string $location
      */
-	public static $contact_email = 'maidachakerian@hotmail.com';
+	public static $contact_email = 'hi@maidachakerian.com';
 	public static $contact_phone = '+52 (998) 897 86 57';
 	public static $contact_facebook = 'MC Brazilian Swimwear';
 	public static $contact_instagram = 'mc.brazilianswimwear';
@@ -165,7 +165,7 @@ class Configuration
 	 *
      * @var boolean $db_state
      */
-	public static $db_state = false;
+	public static $db_state = true;
 
 	/**
      * Tipo de base de datos.
@@ -184,7 +184,7 @@ class Configuration
 	 *
      * @var string $db_host
      */
-	public static $db_host = '';
+	public static $db_host = '127.0.0.1';
 
 	/**
      * Nombre de la base de datos
@@ -193,7 +193,7 @@ class Configuration
 	 *
      * @var string $db_name
      */
-	public static $db_name = '';
+	public static $db_name = 'foxior';
 
 	/**
      * Usuario de la base de datos
@@ -202,7 +202,7 @@ class Configuration
 	 *
      * @var string $db_user
      */
-	public static $db_user = '';
+	public static $db_user = 'root';
 
 	/**
      * Contraseña de la base de datos.

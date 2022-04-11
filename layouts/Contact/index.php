@@ -20,13 +20,13 @@ $this->dependencies->add(['js', '{$path.js}Contact/index.js?v=1.0']);
                         <input type="text" name="fullname">
                     </fieldset>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <fieldset>
                         <h4>{$lang.email}</h4>
                         <input type="email" name="email">
                     </fieldset>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <fieldset>
                         <h4>{$lang.phone}</h4>
                         <input type="text" name="phone">
@@ -52,10 +52,6 @@ $this->dependencies->add(['js', '{$path.js}Contact/index.js?v=1.0']);
         <a href="https://api.whatsapp.com/send?phone=<?php echo Configuration::$contact_whatsapp; ?>" target="_blank">
             <i class="fab fa-whatsapp"></i>
             <span><?php echo Configuration::$contact_whatsapp; ?></span>
-        </a>
-        <a href="tel:<?php echo Configuration::$contact_phone; ?>" target="_blank" data-mobile-flex>
-            <i class="fas fa-phone"></i>
-            <span><?php echo Configuration::$contact_phone; ?></span>
         </a>
     </section>
 </main>

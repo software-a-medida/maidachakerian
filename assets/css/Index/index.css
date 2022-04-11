@@ -25,6 +25,17 @@ main.home > section.home > #home_right {
     float: right;
 }
 
+@media (max-width: 425px) {
+
+    main.home > section.home > #home_left {
+        width: 100%;
+    }
+
+    main.home > section.home > #home_right {
+        display: none;
+    }
+}
+
 main.home > section.home > #home_left div.item,
 main.home > section.home > #home_right div.item {
     width: 100%;
@@ -50,6 +61,14 @@ main.home > section.home > div.logotype {
     z-index: 98;
 }
 
+@media (max-width: 425px) {
+
+    main.home > section.home > div.logotype {
+        justify-content: flex-end;
+        padding: 20px;
+    }
+}
+
 main.home > section.home > div.logotype > h1 {
     margin-bottom: 5px;
     font-family: sans-serif;
@@ -66,7 +85,16 @@ main.home > section.home > div.logotype > h3 {
     color: #fff;
 }
 
-/*  */
+@media (max-width: 425px) {
+
+    main.home > section.home > div.logotype > h1 {
+        font-size: 50px;
+    }
+
+    main.home > section.home > div.logotype > h3 {
+        font-size: 24px;
+    }
+}
 
 /*  */
 
@@ -85,6 +113,14 @@ main.home > section.categories > article {
     height: 400px;
     float: left;
     position: relative;
+}
+
+@media (max-width: 425px) {
+
+    main.home > section.categories > article {
+        width: 100%;
+        float: none;
+    }
 }
 
 main.home > section.categories > article > figure {
@@ -147,42 +183,81 @@ main.home > section.categories > article > div > a > i {
 /*  */
 
 main.home > section.view_all_shop,
-main.home > section.about_us {
+main.home > section.about_us,
+main.home > section.contact_us {
     width: 100%;
     height: 100vh;
     background-color: #000;
 }
 
+@media (max-width: 425px) {
+
+    main.home > section.view_all_shop,
+    main.home > section.about_us,
+    main.home > section.contact_us {
+        height: auto;
+    }
+}
+
 main.home > section.view_all_shop::after ,
-main.home > section.about_us::after {
+main.home > section.about_us::after,
+main.home > section.contact_us::after {
     content: '';
     display: block;
     clear: both;
 }
 
 main.home > section.view_all_shop > div,
-main.home > section.about_us > div {
+main.home > section.about_us > div,
+main.home > section.contact_us > div {
     width: 50%;
     height: 100%;
-    float: left;
     display: flex;
-    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
     padding: 100px 50px;
     box-sizing: border-box;
 }
 
+main.home > section.view_all_shop > div,
+main.home > section.contact_us > div {
+    float: left;
+    align-items: flex-start;
+}
+
+main.home > section.about_us > div {
+    float: right;
+    align-items: flex-end;
+}
+
+@media (max-width: 425px) {
+
+    main.home > section.view_all_shop > div,
+    main.home > section.about_us > div,
+    main.home > section.contact_us > div {
+        width: 100%;
+        float: none;
+        align-items: center;
+        padding: 20px;
+    }
+}
+
 main.home > section.view_all_shop > div > h2,
-main.home > section.about_us > div > h2 {
+main.home > section.about_us > div > h2,
+main.home > section.contact_us > div > h2 {
     margin-bottom: 20px;
     font-size: 30px;
     font-weight: 200;
     color: #fff;
 }
 
+main.home > section.about_us > div > h2 {
+    text-align: right;
+}
+
 main.home > section.view_all_shop > div > h3,
-main.home > section.about_us > div > h3 {
+main.home > section.about_us > div > h3,
+main.home > section.contact_us > div > h3 {
     margin-bottom: 20px;
     font-family: sans-serif;
     font-size: 60px;
@@ -191,8 +266,23 @@ main.home > section.about_us > div > h3 {
     color: #fff;
 }
 
+main.home > section.about_us > div > h3 {
+    text-align: right;
+}
+
+@media (max-width: 425px) {
+
+    main.home > section.view_all_shop > div > h3,
+    main.home > section.about_us > div > h3,
+    main.home > section.contact_us > div > h3 {
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
 main.home > section.view_all_shop > div > p,
-main.home > section.about_us > div > p {
+main.home > section.about_us > div > p,
+main.home > section.contact_us > div > p {
     max-width: 800px;
     margin-bottom: 20px;
     font-size: 18px;
@@ -200,8 +290,22 @@ main.home > section.about_us > div > p {
     color: #fff;
 }
 
+main.home > section.about_us > div > p {
+    text-align: right;
+}
+
+@media (max-width: 425px) {
+
+    main.home > section.view_all_shop > div > p,
+    main.home > section.about_us > div > p,
+    main.home > section.contact_us > div > p {
+        text-align: justify;
+    }
+}
+
 main.home > section.view_all_shop > div > a,
-main.home > section.about_us > div > a {
+main.home > section.about_us > div > a,
+main.home > section.contact_us > div > a {
     width: auto;
     height: 50px;
     display: flex;
@@ -217,23 +321,45 @@ main.home > section.about_us > div > a {
 }
 
 main.home > section.view_all_shop > div > a > i,
-main.home > section.about_us > div > a > i {
+main.home > section.about_us > div > a > i,
+main.home > section.contact_us > div > a > i {
     margin-right: 5px;
     font-size: 18px;
 }
 
 main.home > section.view_all_shop > figure,
-main.home > section.about_us > figure {
+main.home > section.about_us > figure,
+main.home > section.contact_us > figure {
     width: 50%;
     height: 100%;
-    float: right;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
 }
 
-main.home > section.view_all_shop > figure > img {
+main.home > section.view_all_shop > figure,
+main.home > section.contact_us > figure {
+    float: right;
+}
+
+main.home > section.about_us > figure {
+    float: left;
+}
+
+@media (max-width: 425px) {
+
+    main.home > section.view_all_shop > figure,
+    main.home > section.about_us > figure,
+    main.home > section.contact_us > figure {
+        width: 100%;
+        height: 50vh;
+        float: none;
+    }
+}
+
+main.home > section.view_all_shop > figure > img,
+main.home > section.contact_us > figure > img {
     width: 100%;
     height: auto;
 }
@@ -243,80 +369,16 @@ main.home > section.about_us > figure > img {
     height: 100%;
 }
 
-/*  */
+@media (max-width: 425px) {
 
-main.home > section.contact_us {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-}
+    main.home > section.view_all_shop > figure > img,
+    main.home > section.about_us > figure > img {
+        width: auto;
+        height: 100%;
+    }
 
-main.home > section.contact_us > figure {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-main.home > section.contact_us > figure > img {
-    width: 100%;
-    height: auto;
-}
-
-main.home > section.contact_us > div {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.6);
-}
-
-main.home > section.contact_us > div > div {
-    width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 50px;
-    padding: 0px 100px 50px 100px;
-    box-sizing: border-box;
-}
-
-main.home > section.contact_us > div > div > span {
-    width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-    font-size: 24px;
-    font-weight: 200;
-    color: #fff;
-}
-
-main.home > section.contact_us > div > div > span > i {
-    margin-right: 10px;
-    font-size: 30px;
-}
-
-main.home > section.contact_us > div > div > a {
-    width: auto;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    padding: 0px 20px;
-    border-radius: 50px;
-    box-sizing: border-box;
-    background-color: #fff;
-    font-size: 14px;
-    color: #000;
-    cursor: pointer;
+    main.home > section.contact_us > figure > img {
+        width: 100%;
+        height: auto;
+    }
 }

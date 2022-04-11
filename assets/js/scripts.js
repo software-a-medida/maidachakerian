@@ -14,6 +14,16 @@ $(document).ready(function()
 {
     nav_scroll_down('header.menu', 'down', 0);
 
+    $('[data-action="open_mobile"]').on('click', function()
+    {
+        $('header.mobile > nav').addClass('open');
+    });
+
+    $('[data-action="close_mobile"]').on('click', function()
+    {
+        $('header.mobile > nav').removeClass('open');
+    });
+
     var product;
 
     $('[data-button-modal="details"]').on('click', function()

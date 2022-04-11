@@ -46,25 +46,25 @@ $this->dependencies->add(['js', '{$path.js}Cart/index.js?v=1.0']);
         <main>
             <form name="payment">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                         <fieldset>
                             <h4>{$lang.firstname}</h4>
                             <input type="text" name="firstname">
                         </fieldset>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                         <fieldset>
                             <h4>{$lang.lastname}</h4>
                             <input type="text" name="lastname">
                         </fieldset>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                         <fieldset>
                             <h4>{$lang.address}</h4>
                             <input type="text" name="address">
                         </fieldset>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                         <fieldset>
                             <h4>{$lang.area}</h4>
                             <select name="area">
@@ -74,13 +74,13 @@ $this->dependencies->add(['js', '{$path.js}Cart/index.js?v=1.0']);
                             </select>
                         </fieldset>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                         <fieldset>
                             <h4>{$lang.email}</h4>
                             <input type="email" name="email">
                         </fieldset>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                         <fieldset>
                             <h4>{$lang.phone}</h4>
                             <input type="text" name="phone">
