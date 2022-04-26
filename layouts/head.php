@@ -9,7 +9,7 @@
 		<base href="{$vkye_base}">
 		<title>{$vkye_title}</title>
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
-		<meta name="author" content="Gersón Aarón Gómez Macías" />
+		<meta name="author" content="Mojo MBA" />
 		<meta name="keywords" content="{$_vkye_seo_keywords}" />
 		<meta name="description" content="{$_vkye_seo_description}" />
 		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />

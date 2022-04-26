@@ -54,7 +54,7 @@
             <div></div>
         </section>
         <footer class="menu">
-            <p>Copyright <i class="fa-solid fa-copyright"></i> <?php echo Configuration::$web_page; ?> 2022. {$lang.all_right_reserved} {$lang.development_by} <a href="https://codemonkey.com.mx" target="_blank">CodeMonkey.com.mx.</a></p>
+            <p>Copyright <i class="fa-solid fa-copyright"></i> <?php echo Configuration::$web_page; ?> 2022. {$lang.all_right_reserved} {$lang.development_by} <a href="https://mojomba.com" target="_blank">Mojo MBA</a>.</p>
         </footer>
         <script src="{$path.js}jquery-3.4.1.min.js"></script>
         <script src="{$path.js}valkyrie.js?v=1.0"></script>
